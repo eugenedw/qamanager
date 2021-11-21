@@ -1,0 +1,300 @@
+[
+    {
+        "guid" : "83fd87db-fcf4-481a-8902-1c450b8fd3e5",
+        "ms_fspec_req": "1",
+        "ms_dvint_req": "0",
+        "status" : 2,
+        "ms_uat_req": "0",
+        "ms_beta_req": "0",
+        "ms_disr_req": "0",
+        "project_dates_flex": "1",
+        "dt_created" : "2021-09-14T01:16:42.128Z",
+        "dt_reviewed" : "2021-09-14T05:21:22.128Z",
+        "jira_list": [
+          "https://jira.int.dmdc.osd.mil/project/324/issue1",
+          "https://jira.int.dmdc.osd.mil/project/324/issue2",
+          "https://jira.int.dmdc.osd.mil/project/324/issue3"
+        ],
+        "requester_name": "Kendall Walsh",
+        "requester_email": "walshk@mail.mil",
+        "project_name": "NDAA Release",
+        "app_version": "5.12",
+        "app_id": "df62fc1c-11c8-11ec-b9cc-3a02744196a1",
+        "program_id": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "release_type": "major",
+        "ms_fspec_dt": "05/21/2021",
+        "ms_modl_dt": "07/24/2021",
+        "ms_qacmplt_dt": "09/01/2021",
+        "ms_prod_dt": "09/22/2021",
+        "chg_under_test_new": true,
+        "chg_under_test_enh": true,
+        "dep_req_url": "https://dhra.deps.mil/sites/app/requirements.docx",
+        "dep_spec_url": "https://dhra.deps.mil/sites/app/specifications.docx",
+        "dep_rtm_url": "https://dhra.deps.mil/sites/app/rtm.docx",
+        "dep_other_app_test": "1",
+        "dep_other_app_dependencies": "1",
+        "dep_other_app_desc": "trigger_1_v2",
+        "dep_risk_level": "1",
+        "dep_priority_level": "1",
+        "comments": "This is a test RRF for processing"
+      },
+      {
+        "guid" : "a3ef0478-e7ba-4da8-bfc7-35e9c390fb29",
+        "dt_created" : "2021-09-14T04:26:42.128Z",
+        "ms_fspec_req": "0",
+        "ms_dvint_req": "0",
+        "status" : 1,
+        "ms_uat_req": 1,
+        "ms_beta_req": "0",
+        "ms_disr_req": "0",
+        "project_dates_flex": "0",
+        "jira_list": [
+          "https://jira.int.dmdc.osd.mil/project/123/issue1"
+        ],
+        "requester_name": "Lamar Jackson",
+        "requester_email": "ljackson@mail.mil",
+        "project_name": "Angular 12 Release",
+        "app_version": "3.2",
+        "app_id": "df6307e8-11c8-11ec-b9cc-3a02744196a1",
+        "program_id": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "release_type": "major",
+        "ms_modl_dt": "12/12/2021",
+        "ms_qacmplt_dt": "12/26/2021",
+        "ms_uat_dt": "12/30/2021",
+        "ms_beta_dt": "",
+        "ms_prod_dt": "12/12/2021",
+        "ms_disr_dt": "",
+        "chg_under_test_ltf": true,
+        "chg_under_test_new": true,
+        "project_dates_flex_desc": "We cannot change this date, it's mandatory",
+        "dep_req_url": "https://deps.dhra.mil/requirements",
+        "dep_spec_url": "https://deps.dhra.mil/specs",
+        "dep_rtm_url": "https://deps.dhra.mil/rtm",
+        "dep_other_app_test": "0",
+        "dep_other_app_dependencies": "0",
+        "dep_risk_level": "2",
+        "dep_risk_level_desc": "This is high risk",
+        "dep_priority_level": "1",
+        "comments": "No comments"
+      },{
+        "status": 3,
+        "ms_fspec_req": 1,
+        "ms_dvint_req": "0",
+        "ms_uat_req": 1,
+        "ms_beta_req": "0",
+        "ms_disr_req": "0",
+        "project_dates_flex": "1",
+        "jira_list": [
+          "https://jira.int.dmdc.osd.mil:8888/ioajso/asoijf/84802",
+          "https://jira.int.dmdc.osd.mil:8888/ioajsf/j39foiw/iji3099"
+        ],
+        "guid": "b8c3311e-24fc-40dd-bcd0-24367eb844b4",
+        "dt_created": "2021-09-14T06:32:19.821Z",
+        "requester_name": "Francis Holloway",
+        "requester_email": "francis.p.holloway@mail.mil",
+        "project_name": "Security Review",
+        "app_version": "5.12.1",
+        "app_id": "df635b3a-11c8-11ec-b9cc-3a02744196a1",
+        "program_id": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "release_type": "major",
+        "ms_modl_dt": "03/23/2021",
+        "ms_qacmplt_dt": "04/21/2021",
+        "ms_prod_dt": "04/28/2021",
+        "ms_uat_dt": "04/22/2021",
+        "ms_fspec_dt": "02/20/2021",
+        "chg_under_test_enh": true,
+        "chg_under_test_fix": true,
+        "dep_req_url": "https://jaoijs.com/aijosidf",
+        "dep_spec_url": "https://ajos.eio/8iroiww",
+        "dep_rtm_url": "https://iriosdf.soija.com/jriofiowi",
+        "dep_other_app_test": "0",
+        "dep_other_app_dependencies": "0",
+        "dep_risk_level": "1",
+        "dep_priority_level": "0",
+        "comments": "comments will appear in this block",
+        "team_list": [
+          "669d0031-6e08-4068-a6e5-546670e76bcb",
+          "bac1c588-3aff-42ea-9cb4-97a84a2d6132"
+        ],
+        "activity_log": [
+          {
+            "message": "Maecenas elit odio, et eleifend libero vulputate sit amet. In at turpis nisl. Maecenas nisl lectus, tempor et venenatis sed, efficitur id sem. Ut sit amet tellus vel dui eleifend hendrerit eget et est.",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "John",
+              "lastname": "Euser",
+              "email": "john.euser.ctr@mail.mil"
+            },
+            "type": 0,
+            "dt_created": "2021-09-16T06:14:50.779Z",
+            "guid": "12c2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Vestibulum finibus viverra nisl, vel aliquet sem tempor et. Pellentesque imperdiet gravida elit. Nunc sit amet odio vitae lectus ullamcorper scelerisque. Nam sollicitudin ligula a ligula interdum, vitae consectetur lacus semper. Maecenas molestie elit odio, et eleifend libero vulputate sit amet. In at turpis nisl. Maecenas nisl lectus, tempor et venenatis sed, efficitur id sem. Ut sit amet tellus vel dui eleifend hendrerit eget et est.",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "John",
+              "lastname": "Euser",
+              "email": "john.euser.ctr@mail.mil"
+            },
+            "type": 0,
+            "dt_created": "2021-09-16T06:14:29.044Z",
+            "guid": "f5fe856c-d0ba-4aa2-a09e-04015e97dd09"
+          },
+          {
+            "message": "QA Team Review Complete - Resources and LOE Assigned",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "Jill",
+              "lastname": "Swanson",
+              "email": "jill.swanson.ctr@mail.mil"
+            },
+            "type": 2,
+            "dt_created": "2021-09-15T09:01:20.179Z",
+            "guid": "11aa2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Release created and ready for review",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "Harold",
+              "lastname": "David",
+              "email": "harold.david.ctr@mail.mil"
+            },
+            "type": 2,
+            "dt_created": "2021-09-15T02:09:20.179Z",
+            "guid": "15ab2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          }
+        ]
+      },{
+        "status": 5,
+        "ms_fspec_req": "0",
+        "ms_dvint_req": "0",
+        "ms_uat_req": "0",
+        "ms_beta_req": "0",
+        "ms_disr_req": "0",
+        "project_dates_flex": "0",
+        "jira_list": [
+          "https://jira.int.osd.pentagon.mil/project/AMMS/233",
+          "https://jira.int.osd.pentagon.mil/project/AMMS/482"
+        ],
+        "guid": "91287e17-a669-43d3-97ac-89fee38fd56c",
+        "dt_created": "2021-09-14T06:39:33.950Z",
+        "requester_name": "Jacob Riley",
+        "requester_email": "jacob.p.riley@mail.mil",
+        "project_name": "OCI Migration Wave 2",
+        "app_version": "1.9.1",
+        "app_id": "df630158-11c8-11ec-b9cc-3a02744196a1",
+        "program_id": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "release_type": "minor",
+        "ms_modl_dt": "09/10/2021",
+        "ms_qacmplt_dt": "09/30/2021",
+        "ms_prod_dt": "10/10/2021",
+        "chg_under_test_fix": true,
+        "chg_under_test_enh": true,
+        "chg_under_test_new": true,
+        "project_dates_flex_desc": "The dates are not flexible because we must meet the migration schedule",
+        "dep_req_url": "https://requirementslink",
+        "dep_spec_url": "https://specificaitonlink.org",
+        "dep_rtm_url": "https://rtmlink.org",
+        "dep_other_app_test": "1",
+        "dep_other_app_dependencies": "1",
+        "dep_other_app_desc": "dependency_1, dependency_2",
+        "dep_risk_level": "2",
+        "dep_risk_level_desc": "this is a high risk release",
+        "dep_priority_level": "1",
+        "comments": "Comments, here",
+        "activity_log": [
+          {
+            "message": "This release is currently at risk",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "Brian",
+              "lastname": "Warton",
+              "email": "brian.warton.ctr@mail.mil"
+            },
+            "type": 1,
+            "dt_created": "2021-09-15T19:01:20.179Z",
+            "guid": "11aa2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Maecenas elit odio, et eleifend libero vulputate sit amet. In at turpis nisl. Maecenas nisl lectus, tempor et venenatis sed, efficitur id sem. Ut sit amet tellus vel dui eleifend hendrerit eget et est.",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "John",
+              "lastname": "Euser",
+              "email": "john.euser.ctr@mail.mil"
+            },
+            "type": 0,
+            "dt_created": "2021-09-16T06:14:50.779Z",
+            "guid": "12c2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Vestibulum finibus viverra nisl, vel aliquet sem tempor et. Pellentesque imperdiet gravida elit. Nunc sit amet odio vitae lectus ullamcorper scelerisque. Nam sollicitudin ligula a ligula interdum, vitae consectetur lacus semper. Maecenas molestie elit odio, et eleifend libero vulputate sit amet. In at turpis nisl. Maecenas nisl lectus, tempor et venenatis sed, efficitur id sem. Ut sit amet tellus vel dui eleifend hendrerit eget et est.",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "John",
+              "lastname": "Euser",
+              "email": "john.euser.ctr@mail.mil"
+            },
+            "type": 0,
+            "dt_created": "2021-09-16T06:14:29.044Z",
+            "guid": "f5fe856c-d0ba-4aa2-a09e-04015e97dd09"
+          },
+          {
+            "message": "QA Team Review Complete - Resources and LOE Assigned",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "Jill",
+              "lastname": "Swanson",
+              "email": "jill.swanson.ctr@mail.mil"
+            },
+            "type": 2,
+            "dt_created": "2021-09-15T09:01:20.179Z",
+            "guid": "11aa2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Release created and ready for review",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "Harold",
+              "lastname": "David",
+              "email": "harold.david.ctr@mail.mil"
+            },
+            "type": 2,
+            "dt_created": "2021-09-15T02:09:20.179Z",
+            "guid": "15ab2d0e-4c5d-4cc7-a59b-8888ea2e76eb"
+          },
+          {
+            "message": "Cras porttitor mi id lectus pulvinar, a congue sem porttitor. Nam commodo convallis ipsum. Nam dui massa, facilisis sed dolor ac, tincidunt pulvinar lorem. Quisque vitae nunc nunc. Duis ac aliquet risus.",
+            "author": {
+              "roles": {},
+              "applications": [],
+              "firstname": "John",
+              "lastname": "Euser",
+              "email": "john.euser.ctr@mail.mil"
+            },
+            "type": 1,
+            "dt_created": "2021-09-16T07:21:42.388Z",
+            "guid": "764ad058-31f3-419a-8d92-de9fa6341937"
+          }
+        ],
+        "team_list": [
+          "03f15265-fc78-4ee1-9693-c156bed2af98"
+        ],
+        "loe_automation": 9,
+        "loe_automation_unit": "d",
+        "loe_manual": 3,
+        "loe_manual_unit": "d",
+        "at_risk": true
+      }
+]

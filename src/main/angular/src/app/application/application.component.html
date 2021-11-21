@@ -1,0 +1,150 @@
+<div class="container">
+  <div class="rrf-edit-container">
+    <h2><span *ngIf="currentApplication.guid===undefined">Create an</span>
+        <span *ngIf="currentApplication.guid!==undefined">Edit</span> Application</h2>
+        <button class="btn btn-sm btn-success push-right" [routerLink]="['/rrf/new']" [queryParams]="{app_id: currentApplication.guid}" type="button">Create Release</button>
+    <form>
+      <nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" 
+              (click)="current_tab='app-tab-general'"
+              [ngClass]="{'active':current_tab=='app-tab-general'}">General</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" 
+              (click)="current_tab='app-tab-releases'"
+              [ngClass]="{'active':current_tab=='app-tab-releases'}">Releases</a>
+        </li>
+      </ul>
+      </nav>
+      <div class="tab-content pt-3 border-top mt-3" id="app-tab-content">
+        <div class="tab pane fade show active" *ngIf="current_tab=='app-tab-general'" [ngClass]="{'show active':current_tab=='app-tab-general'}" id="nav-general" role="tabpanel">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="first_name">Application Name</label>
+                <input type="text" class="form-control" name="app_name" placeholder="DMDC Web Application" [(ngModel)]="currentApplication.name">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="first_name">Application ID</label>
+                <input type="text" class="form-control" name="app_id" placeholder="456" [(ngModel)]="currentApplication.app_id">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="first_name">Artifact</label>
+                <input type="text" class="form-control" name="artifact" placeholder="dmdc_app.ear" [(ngModel)]="currentApplication.artifact">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="govt_prod_owner">Govt. POC</label>
+                <input type="text" class="form-control" name="gov_prod_owner" placeholder="George P. Burdell" [(ngModel)]="currentApplication.govt_owner">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="proj_mgr">Project Manager</label>
+                <input type="text" class="form-control" name="proj_mgr" placeholder="Jane Mitchell" [(ngModel)]="currentApplication.proj_mgr">
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col">
+              <div class="pt-4 pb-2">
+                <span>Automation Status</span>
+              </div>
+              <div class="mt-1">
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="automated_none" value="0" [(ngModel)]="currentApplication.automated">
+                  <label class="form-check-label" for="automated_none">Not Automated (Manual)</label>
+                </div>
+                <div class="form-check form-check-inline mr-5">
+                  <input class="form-check-input" type="radio" name="automated_partially" value="1" [(ngModel)]="currentApplication.automated">
+                  <label class="form-check-label" for="automated_partially">Partially Automated</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="automated_full" value="2" [(ngModel)]="currentApplication.automated">
+                  <label class="form-check-label" for="automated_full">Fully Automated (CI/CD)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row mt-4">
+            <div class="col">
+              <div class="form-group">
+                <label for="prog_select_id">Program Area</label>
+                <select class="form-control" name="prog_select_id" [(ngModel)]="currentApplication.program_id">
+                  <option value="">Select an Program Area</option>
+                  <option *ngFor="let program of programlist" [value]="program.guid">{{program.name}}</option>
+                </select> 
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="application_comment">Comments</label>
+                <textarea class="form-control" name="application_comment" rows="4" [(ngModel)]="currentApplication.comment" placeholder="Details for this application..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2 mb-5">
+            <div class="col">
+              <button class="btn btn-success pull-left" type="button" (click)="addapplication()">Save</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab pane fade show active" *ngIf="current_tab=='app-tab-releases'" [ngClass]="{'show active':current_tab=='app-tab-releases'}" id="nav-releases" role="tabpanel">
+          <div class="rrf-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-top-0" style="margin-top: 0; padding-top: 0">Release</th>
+                  <th scope="col" class="border-top-0" style="margin-top: 0; padding-top: 0">Tracking</th>
+                  <th class="border-top-0" style="margin-top: 0; padding-top: 0"></th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr *ngIf="releases.length == 0">
+                <td colspan="4">
+                  No Releases.
+                </td>
+              </tr>
+              <tr *ngFor="let rrf of releases">
+                <td>
+                  <a [routerLink]="['/rrf/'+rrf.guid]">version: {{rrf.app_version}}</a>
+                  <br />
+                  <small class=""><b>Requested By</b> {{rrf.requester_name}}</small>
+                  <br />
+                  <small class="blue">{{rrf.project_name}}</small>
+                </td>
+                <td>
+                  <small>
+                    <b>Created:</b> {{rrf.dt_created | date : 'medium'}}
+                    <br /><span [hidden]="rrf.dt_reviewed === undefined"><b>Reviewed:</b> {{rrf.dt_reviewed | date : 'medium'}}</span>
+                  </small>
+                </td>
+                <td>
+                  <small class="push-right bolder">{{rrfsvc.statusText(rrf.status)}}</small>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+    
+    <pre class="alert alert-dark mt-5" [hidden]="1==1">{{printApplication()}}</pre>
+  </div>
+</div>

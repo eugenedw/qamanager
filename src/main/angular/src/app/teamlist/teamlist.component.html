@@ -1,0 +1,41 @@
+<div class="rrf-container container">
+  <div class="row">
+    <div class="col">
+      <h4 class="pl-2 pt-3"><b>Team Members</b></h4>
+    </div>
+    <div class="col">
+      <div class="btn-group push-right" role="group" aria-label="Basic example">
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col" class="col-3 border-top-0">Name</th>
+        <th scope="col" class="col-4 border-top-0">Contact</th>
+        <th class="border-top-0">Role</th>
+        <th class="border-top-0"><button class="btn btn-sm btn-outline btn-success push-right mb-2 table-header-create" type="button" routerLink="/person/new">Add Person</button></th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="personlist.length == 0">
+      <td colspan="3">
+        No Team Members Found.
+      </td>
+    </tr>
+    <tr *ngFor="let person of personlist">
+      <td>
+        <a [routerLink]="['/person/'+person.guid]">{{person.firstname}} {{person.lastname}}</a>
+      </td>
+      <td>
+        {{person.phone}}<br />
+        {{person.email}}
+      </td>
+      <td colspan="2">
+        <small class="bolder">{{personsvc.printroles(person.roles)}}</small>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,53 @@
+<div class="application-list-container container">
+  <div class="row">
+    <div class="col">
+      <h4 class="pl-2 pt-3"><b>Applications</b></h4>
+    </div>
+    <div class="col">
+      <a class="btn btn-sm btn-outline btn-success push-right mb-2 table-header-create" [routerLink]="['/application/view/new']">Add Application</a>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col" class="border-top-0 col-4">Application</th>
+        <th scope="col" class="border-top-0 col-4">Program Area</th>
+        <th scope="col" class="border-top-0 col-3">Contacts</th>
+        <th scope="col" class="border-top-0">Status</th>
+        <th class="border-top-0"></th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="applications.length == 0">
+      <td colspan="5">
+        No Applications Added.
+      </td>
+    </tr>
+    <tr *ngIf="applications.length > 0">
+      <td><input type="text" class="form-control" [(ngModel)]="filter.app_name" placeholder="Filter Applications" /></td>
+      <td><input type="text" class="form-control" [(ngModel)]="filter.program_name" placeholder="Filter Programs" /></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr *ngFor="let app of applications | abstractfilter: 'name':filter.app_name | abstractfilter: 'program.name':filter.program_name">
+      <td>
+        <a [routerLink]="['/application/view/'+app.guid]">{{app.name}}</a>
+      </td>
+      <td>
+        {{app.program.name}}
+      </td>
+      <td>
+        <small>
+        <b>Govt. POC: </b> {{app.govt_owner}}<br />
+        <b>Project Manager: </b> {{app.proj_mgr}}
+        </small>
+      </td>
+      <td colspan="2">
+        <small class="push-right bolder"></small>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

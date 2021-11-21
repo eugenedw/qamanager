@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="rrf-edit-container">
+    <h2><span *ngIf="currentPerson.dt_created===undefined">Create a</span>
+        <span *ngIf="currentPerson.dt_created!==undefined">Edit</span> Person</h2>
+    <form>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" class="form-control" name="first_name" placeholder="John" [(ngModel)]="currentPerson.firstname">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="first_name">Last Name</label>
+            <input type="text" class="form-control" name="last_name" placeholder="Doe" [(ngModel)]="currentPerson.lastname">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="requester_email">Email address</label>
+            <input type="email" class="form-control" name="requestor_email" placeholder="person@mail.mil" [(ngModel)]="currentPerson.email">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="requester_phone">Phone Number</label>
+            <input type="text" class="form-control" name="requestor_phone" placeholder="(831) 555-1100" [(ngModel)]="currentPerson.phone">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="pt-4 pb-2">
+            <h5>Roles</h5>
+          </div>
+          <div class="mt-1">
+            <div class="form-check form-check-inline mr-4">
+              <input class="form-check-input" type="checkbox" name="role_analyst" value="1" [(ngModel)]="currentPerson.roles['ANALYST']">
+              <label class="form-check-label" for="role_analyst">Analyst</label>
+            </div>
+            <div class="form-check form-check-inline mr-4">
+              <input class="form-check-input" type="checkbox" name="role_engineer" value="1" [(ngModel)]="currentPerson.roles['ENGINEER']">
+              <label class="form-check-label" for="role_engineer">Engineer</label>
+            </div>
+            <div class="form-check form-check-inline mr-4">
+              <input class="form-check-input" type="checkbox" name="role_manager" value="1" [(ngModel)]="currentPerson.roles['MANAGER']">
+              <label class="form-check-label" for="role_manager">Manager</label>
+            </div>
+            <div class="form-check form-check-inline mr-4">
+              <input class="form-check-input" type="checkbox" name="role_steward" value="1" [(ngModel)]="currentPerson.roles['DATA_STEWARD']">
+              <label class="form-check-label" for="role_steward">Data Steward</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="role_architect" value="1" [(ngModel)]="currentPerson.roles['ARCHITECT']">
+              <label class="form-check-label" for="role_architect">Architect</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <div class="form-group">
+            <h5 for="person_comment">Comments</h5>
+            <textarea class="form-control" name="person_comment" rows="4" [(ngModel)]="currentPerson.comment" placeholder="Details for this team member..."></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <h5>Application List</h5>
+        </div>
+        <div class="col-12">
+          <div class="row" *ngFor="let appid of currentPerson.applications; let idx = index">
+            <div class="col">
+              <div *ngIf="appid == ''">
+                <select class="form-control" name="app_select_id" [(ngModel)]="currentPerson.applications[idx]">
+                  <option value="">Select an Application</option>
+                  <option *ngFor="let app of applications" [value]="app.guid">{{app.name}}</option>
+                </select> 
+              </div>
+              <div *ngIf="appid != ''">
+                <div class="input-group mb-2">
+                  <input type="text" class="form-control" disabled name="person_app_{{idx}}" value="{{printapplication(appid).name}}">
+                  <div class="input-group-append">
+                    <button class="btn btn-danger" type="button" (click)="removeapplication(appid)"><b>X</b></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_info text-secondary" *ngIf="currentPerson.applications === undefined || currentPerson.applications.length == 0">
+            No Applications Assigned to {{currentPerson.firstname}}
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <button class="btn btn-info btn-sm pull-left" type="button" (click)="addapplication()">Add Application</button>
+          <button class="btn btn-success btn-sm pull-left ml-2" type="button" (click)="addapplication()">Save</button>
+        </div>
+      </div>
+    </form>
+    <pre class="alert alert-dark mt-5" [hidden]="1==1">{{printPersonList()}}</pre>
+    <pre class="alert alert-dark mt-5">{{printPerson()}}</pre>
+  </div>
+</div>

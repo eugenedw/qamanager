@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="jumbotron dashboard-panel">
+    <h1 class="display-4">DMDC QA Manager</h1>
+    <p class="lead">This is a tool to facilitate management of critical software validation tasks.</p>
+    <hr class="my-4">
+    <p>Select from one of the common tasks below.</p>
+    <a class="btn btn-primary btn-sm" routerLink="/rrf/new" role="button">Submit an RRF</a>
+    <a class="btn btn-info btn-sm ml-1" routerLink="/rrf/find" role="button">View RRF Status</a>
+    <a class="btn btn-danger btn-sm ml-1" [routerLink]="['/rrf-list']" [queryParams]="{atrisk:true}" role="button">Risk Tracker</a>
+  </div>
+</div>

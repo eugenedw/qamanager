@@ -1,0 +1,763 @@
+[
+  {
+    "roles": {
+      "ANALYST": true,
+      "ENGINEER": true,
+      "MANAGER": false,
+      "DATA_STEWARD": false,
+      "ARCHITECT": false
+    },
+    "firstname": "Kenisha",
+    "lastname": "Brasier",
+    "guid": "8a620e55-0a09-4dbb-80f5-b754abda6a2c",
+    "email": "kenisha.brasier@mail.mil",
+    "phone": "(472) 448-0877",
+    "dt_created": "2021-09-15T04:14:30.791Z",
+    "applications": [
+      "df62f6ae-11c8-11ec-b9cc-3a02744196a1",
+      "df62f99c-11c8-11ec-b9cc-3a02744196a1"
+    ]
+  },{
+    "roles": {
+      "ANALYST": false,
+      "ENGINEER": true,
+      "MANAGER": true,
+      "DATA_STEWARD": false,
+      "ARCHITECT": false
+    },
+    "firstname": "Danita",
+    "lastname": "Caudle",
+    "guid": "77d962c2-e1ea-486d-bc25-91a86197a98e",
+    "email": "danita.caudle@mail.mil",
+    "phone": "(908) 729-7660",
+    "dt_created": "2021-09-15T04:14:30.791Z",
+    "applications": [
+      "df6307e8-11c8-11ec-b9cc-3a02744196a1",
+      "df6304e6-11c8-11ec-b9cc-3a02744196a1"
+    ]
+  },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Emery",
+      "lastname": "Said",
+      "guid": "c0714ead-cae0-4a1f-925a-cf2cee81449a",
+      "email": "emery.said@mail.mil",
+      "phone": "(646) 230-0243",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Signe",
+      "lastname": "Poll",
+      "guid": "be231f5b-a111-4e7b-9d2c-f931c05eafcb",
+      "email": "signe.poll@mail.mil",
+      "phone": "(813) 255-8286",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Edyth",
+      "lastname": "Reinbold",
+      "guid": "37ccec6b-5870-4d8c-91b7-250dac5339d3",
+      "email": "edyth.reinbold@mail.mil",
+      "phone": "(065) 259-9873",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Soila",
+      "lastname": "Markham",
+      "guid": "46b1f17f-5380-4ff5-b788-725ef189c5bc",
+      "email": "soila.markham@mail.mil",
+      "phone": "(747) 042-8069",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },{
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Deidra",
+      "lastname": "Trezza",
+      "guid": "669d0031-6e08-4068-a6e5-546670e76bcb",
+      "email": "deidra.trezza@mail.mil",
+      "phone": "(717) 747-2372",
+      "dt_created": "2021-09-15T04:14:30.791Z",
+      "applications": [
+        "df635b3a-11c8-11ec-b9cc-3a02744196a1"
+      ]
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Theressa",
+      "lastname": "Tsang",
+      "guid": "8f312f8c-00ba-48f0-ab6c-a102a7896698",
+      "email": "theressa.tsang@mail.mil",
+      "phone": "(456) 488-3203",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Vannessa",
+      "lastname": "Schmitmeyer",
+      "guid": "a8172f10-a657-4030-859e-c8d6dadda20f",
+      "email": "vannessa.schmitmeyer@mail.mil",
+      "phone": "(274) 080-6931",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Deb",
+      "lastname": "Desanti",
+      "guid": "17a68bf1-dd9c-49c7-ae28-0bf26a79f637",
+      "email": "deb.desanti@mail.mil",
+      "phone": "(368) 334-0969",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Mellie",
+      "lastname": "Strey",
+      "guid": "bac1c588-3aff-42ea-9cb4-97a84a2d6132",
+      "email": "mellie.strey@mail.mil",
+      "phone": "(374) 168-7440",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Jordan",
+      "lastname": "Smart",
+      "guid": "99c9e1b7-f0bf-4f92-a38c-624beeaca01a",
+      "email": "jordan.smart@mail.mil",
+      "phone": "(280) 125-4888",
+      "dt_created": "2021-09-15T04:14:30.791Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Leigh",
+      "lastname": "Groover",
+      "guid": "0145bf4f-edb2-44f7-aa34-b858abfc5b49",
+      "email": "leigh.groover@mail.mil",
+      "phone": "(445) 592-3339",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Elba",
+      "lastname": "Crupi",
+      "guid": "d337fbbc-f8a1-4328-9bd3-d4bd413c1df3",
+      "email": "elba.crupi@mail.mil",
+      "phone": "(860) 027-9012",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Jules",
+      "lastname": "Carini",
+      "guid": "994366b5-7ffc-4b30-b9e7-5ea5b16b28d1",
+      "email": "jules.carini@mail.mil",
+      "phone": "(881) 681-6687",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Micheal",
+      "lastname": "Rinker",
+      "guid": "ca719e51-7d51-41a4-b551-4274457fc1e4",
+      "email": "micheal.rinker@mail.mil",
+      "phone": "(088) 457-1733",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Antonio",
+      "lastname": "Bartkowski",
+      "guid": "d5e00930-1d1f-4bc8-ab2a-d01252bad000",
+      "email": "antonio.bartkowski@mail.mil",
+      "phone": "(631) 529-8992",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Tamekia",
+      "lastname": "Lachance",
+      "guid": "e28b6333-db1a-4476-b40c-3602dec39505",
+      "email": "tamekia.lachance@mail.mil",
+      "phone": "(512) 476-9868",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Eloy",
+      "lastname": "Bosque",
+      "guid": "1bce1bb5-6852-47ce-ba77-79be4fa5878f",
+      "email": "eloy.bosque@mail.mil",
+      "phone": "(466) 412-8783",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Alia",
+      "lastname": "Penrod",
+      "guid": "b83a68e2-261e-4af7-bdc5-5a6ff267c63e",
+      "email": "alia.penrod@mail.mil",
+      "phone": "(869) 803-3392",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Jeanie",
+      "lastname": "Mcentee",
+      "guid": "37fdd23e-c0ef-47ac-b472-db13e2f3d977",
+      "email": "jeanie.mcentee@mail.mil",
+      "phone": "(175) 290-5571",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Slyvia",
+      "lastname": "Bialaszewski",
+      "guid": "a2f87747-1c30-4390-8990-8d27b95adb73",
+      "email": "slyvia.bialaszewski@mail.mil",
+      "phone": "(149) 244-3164",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Pauletta",
+      "lastname": "Denis",
+      "guid": "6bc104aa-1f8b-454f-bb45-08890f9883ff",
+      "email": "pauletta.denis@mail.mil",
+      "phone": "(913) 974-0959",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Monty",
+      "lastname": "Smotherman",
+      "guid": "0fdd4d5f-90c3-4011-9cb1-63f495c60b93",
+      "email": "monty.smotherman@mail.mil",
+      "phone": "(829) 041-0488",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Myong",
+      "lastname": "Kealey",
+      "guid": "3302724a-b961-4619-847b-64bea9fceb29",
+      "email": "myong.kealey@mail.mil",
+      "phone": "(507) 097-7299",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Tressa",
+      "lastname": "Earls",
+      "guid": "c649472e-b60e-4733-aeb2-273147d6ae72",
+      "email": "tressa.earls@mail.mil",
+      "phone": "(767) 022-3854",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Damian",
+      "lastname": "Sobotka",
+      "guid": "656a2da2-40b3-4905-bfe0-54bd7c9a8f72",
+      "email": "damian.sobotka@mail.mil",
+      "phone": "(702) 975-3477",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Cristi",
+      "lastname": "Probst",
+      "guid": "47956370-5dee-4fe0-ba62-a74c38922986",
+      "email": "cristi.probst@mail.mil",
+      "phone": "(903) 925-9362",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },{
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Larhonda",
+      "lastname": "Koppes",
+      "guid": "03f15265-fc78-4ee1-9693-c156bed2af98",
+      "email": "larhonda.koppes@mail.mil",
+      "phone": "(779) 252-5441",
+      "dt_created": "2021-09-15T04:14:30.792Z",
+      "applications": [
+        "df630158-11c8-11ec-b9cc-3a02744196a1"
+      ]
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Adelia",
+      "lastname": "Guerriero",
+      "guid": "eddad17d-5793-4775-8910-8119128b189f",
+      "email": "adelia.guerriero@mail.mil",
+      "phone": "(632) 552-4479",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Stacie",
+      "lastname": "Lumsden",
+      "guid": "ea566ecd-8beb-4032-9832-f598557776d8",
+      "email": "stacie.lumsden@mail.mil",
+      "phone": "(627) 709-2731",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Wendell",
+      "lastname": "Laning",
+      "guid": "d1c09f6b-d9e7-4e17-9f86-d0d67175988a",
+      "email": "wendell.laning@mail.mil",
+      "phone": "(535) 281-0030",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Marc",
+      "lastname": "Johnsen",
+      "guid": "63c9e3e6-1073-4d5c-8e4e-6d863c836640",
+      "email": "marc.johnsen@mail.mil",
+      "phone": "(532) 511-7846",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Jeanetta",
+      "lastname": "Wheless",
+      "guid": "e8b95008-3f31-482b-9e18-8b75b8313187",
+      "email": "jeanetta.wheless@mail.mil",
+      "phone": "(505) 467-7637",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Alexandria",
+      "lastname": "Legaspi",
+      "guid": "bf5642b5-ed49-406c-add2-2c44a5968bc2",
+      "email": "alexandria.legaspi@mail.mil",
+      "phone": "(371) 575-2257",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Leta",
+      "lastname": "Lindsey",
+      "guid": "c83abf46-ad5e-4fad-8831-bcdcc9c6f41f",
+      "email": "leta.lindsey@mail.mil",
+      "phone": "(686) 148-4205",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Sook",
+      "lastname": "Kinsman",
+      "guid": "37cc50bf-98a4-4bc6-95f9-3b2097e99996",
+      "email": "sook.kinsman@mail.mil",
+      "phone": "(209) 673-0240",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Leonel",
+      "lastname": "Dollard",
+      "guid": "1cb20422-496f-402c-8c10-01cf8df31d07",
+      "email": "leonel.dollard@mail.mil",
+      "phone": "(467) 152-0036",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Vern",
+      "lastname": "Nugent",
+      "guid": "6bb5b651-21dc-4dbb-b43e-f6cabc1f3171",
+      "email": "vern.nugent@mail.mil",
+      "phone": "(038) 986-8034",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Johana",
+      "lastname": "Staggers",
+      "guid": "33cd0b68-e0f6-467f-82b9-fe734533774e",
+      "email": "johana.staggers@mail.mil",
+      "phone": "(906) 047-9969",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Ewa",
+      "lastname": "Stgelais",
+      "guid": "1a569366-bffd-4645-83eb-056c3073905b",
+      "email": "ewa.stgelais@mail.mil",
+      "phone": "(349) 624-9627",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Dennise",
+      "lastname": "Schiro",
+      "guid": "93187b21-21d7-4405-8222-a50428d22acb",
+      "email": "dennise.schiro@mail.mil",
+      "phone": "(068) 509-6729",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": false,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Spring",
+      "lastname": "Laberge",
+      "guid": "a1ae67f3-3b62-4497-9449-8e3fb32d35c5",
+      "email": "spring.laberge@mail.mil",
+      "phone": "(034) 060-0859",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": true
+      },
+      "firstname": "Jae",
+      "lastname": "Treadway",
+      "guid": "6bc3a8d7-eb64-494c-8506-86db69eb109a",
+      "email": "jae.treadway@mail.mil",
+      "phone": "(589) 267-5844",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Buck",
+      "lastname": "Landman",
+      "guid": "9fb16ec2-490a-4ad4-ae4b-d1662110cec8",
+      "email": "buck.landman@mail.mil",
+      "phone": "(770) 674-4386",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Dustin",
+      "lastname": "Ahl",
+      "guid": "6ed319a3-c7fd-4a08-a708-146205389949",
+      "email": "dustin.ahl@mail.mil",
+      "phone": "(259) 301-2427",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": true,
+        "MANAGER": true,
+        "DATA_STEWARD": false,
+        "ARCHITECT": false
+      },
+      "firstname": "Maryetta",
+      "lastname": "Wagner",
+      "guid": "2e0a1804-ce59-43a8-b169-4ba592d3690e",
+      "email": "maryetta.wagner@mail.mil",
+      "phone": "(811) 370-7459",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": true,
+        "ENGINEER": false,
+        "MANAGER": true,
+        "DATA_STEWARD": true,
+        "ARCHITECT": false
+      },
+      "firstname": "Marilu",
+      "lastname": "Finkel",
+      "guid": "b3144690-64d3-44d8-836f-730aec39711c",
+      "email": "marilu.finkel@mail.mil",
+      "phone": "(803) 523-7337",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Maxima",
+      "lastname": "Crochet",
+      "guid": "f552b72a-3130-4c17-bc87-12c8877cab10",
+      "email": "maxima.crochet@mail.mil",
+      "phone": "(749) 465-7483",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    },
+    {
+      "roles": {
+        "ANALYST": false,
+        "ENGINEER": false,
+        "MANAGER": false,
+        "DATA_STEWARD": false,
+        "ARCHITECT": true
+      },
+      "firstname": "Lang",
+      "lastname": "Hanger",
+      "guid": "e940d3fd-3fb7-4f6b-b935-ff695b89e48f",
+      "email": "lang.hanger@mail.mil",
+      "phone": "(450) 018-4577",
+      "dt_created": "2021-09-15T04:14:30.792Z"
+    }
+]
