@@ -5,8 +5,9 @@ Spring Boot and Angular 12
 ## Environment Variables ##
 These are some environment variables used at runtime
 
-ANGULAR_APP_TITLE : The title of the application
-ANGULAR_APP_DESCRIPTION : The description of the application (displayed on the home page) 
+`ANGULAR_APP_TITLE` : The title of the application
+
+`ANGULAR_APP_DESCRIPTION` : The description of the application (displayed on the home page) 
 
 The application is designed to read other environment variables from the container (system) which are prefixed with "ANGULAR_". Thanks Clayton Fidelis (https://medium.com/@fidelisclayton/system-environment-variables-in-angular-1f4a922c7b4c), Hugh Anderson (https://medium.com/@hughblue/reading-system-environment-variables-from-angular-part-2-a63368e591b4) and Sumant Shanbag for the comments on how to repair the ng serve issue (https://medium.com/@sumant.shanbag/nice-article-cd3b0cb959f) 
 
