@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="clear"></div>
-  <table class="table mt-4">
+  <table class="table mt-4" *ngIf="rrflist">
     <thead>
       <tr>
         <th scope="col" class="border-top-0">Release</th>
@@ -33,7 +33,7 @@
     <ng-container *ngFor="let rrf of rrflist">
         <tr>
           <td>
-            <a [routerLink]="['/rrf/'+rrf.guid]">{{appinfo(rrf.app_id).name}} - v. {{rrf.app_version}}</a>
+            <a [routerLink]="['/rrf/'+rrf.guid]">{{appinfo(rrf.app_id)!.name}} - v. {{rrf.app_version}}</a>
             <br />
             <small class=""><b>Requested By</b> {{rrf.requester_name}}</small>
             <br />
@@ -52,10 +52,10 @@
         <tr *ngIf="query_filter=='atrisk'">
           <td colspan="3" class="border-top-0">
             <ng-container *ngFor="let log of rrf.activity_log">
-              <div class="alert alert-danger" *ngIf="log.type==1">
+              <div class="alert alert-danger" *ngIf="checkLogType(log.type,'PROBLEM')">
                 <small class="text-primary">{{log.dt_created | date : 'medium'}}</small><br />
                 {{log.message}}
-                <small *ngIf="log.type==0">
+                <small *ngIf="checkLogType(log.type,'COMMENT')">
                  <br /> -- [<b>{{log.author.firstname}} {{log.author.lastname}} ({{log.author.email}})</b>]
                 </small>
               </div>

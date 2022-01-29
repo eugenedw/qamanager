@@ -25,8 +25,8 @@ export class RRFService {
 
     public get(id:string){
         let deferred = new Promise((resolve,reject)=>{
-            this.list(1,1).then((resp:Array<ReleaseRRF>)=>{
-                resolve(resp.find(rrf => rrf.guid === id));
+            this.list(1,1).then((resp:any)=>{
+                resolve(resp.find((rrf: { guid: string; }) => rrf.guid === id));
             })
         });
         return deferred;
@@ -34,14 +34,14 @@ export class RRFService {
 
     public getByApp(app_id:string){ 
         let deferred = new Promise((r,R)=>{
-            this.list(1,1).then((resp:Array<ReleaseRRF>)=>{
-                r(resp.filter(rrf => rrf.app_id === app_id));
+            this.list(1,1).then((resp:any)=>{
+                r(resp.filter((rrf: { app_id: string; }) => rrf.app_id === app_id));
             });
         });
         return deferred;
     }
     
-    public statusText(idx){
+    public statusText(idx:any){
         return RRFStatus[idx];
     }
 

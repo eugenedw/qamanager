@@ -13,7 +13,7 @@ import { ApplicationService } from '../../shared/service/application/application
 })
 export class PersonComponent implements OnInit {
 
-  public currentPerson : Person;
+  public currentPerson !: Person;
 
   constructor(public route:ActivatedRoute, public util:UtilityService, 
               public personsvc:PersonService, public appsvc:ApplicationService) { }
@@ -75,15 +75,15 @@ export class PersonComponent implements OnInit {
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('personid');
     if( id == 'new' ){
-      this.currentPerson = new Person(null,null,null);
+      this.currentPerson = new Person("","","");
       this.currentPerson.guid = UtilityService.uuid();
     }
-    else {
-      this.personsvc.get(id).then((resp:Person)=> {
+    else if( id != null ){
+      this.personsvc.get(id).then((resp:any)=> {
         this.currentPerson = resp;
       });
     }
-    this.appsvc.getApplicationList().then(resp=>{
+    this.appsvc.getApplicationList()?.then(resp=>{
       this.applications = resp;
     });
     this.randompeople();
@@ -96,7 +96,7 @@ export class PersonComponent implements OnInit {
     this.currentPerson.applications.push("");
   }
 
-  removeapplication(appid){
+  removeapplication(appid:any){
     let _apps = [];
     for( let a in this.currentPerson.applications ){
       if( this.currentPerson.applications[a] != appid ){
@@ -112,7 +112,7 @@ export class PersonComponent implements OnInit {
 
   randompeople(){
     for(let p in this.people ){
-      let _p = new Person(null,null,null);
+      let _p = new Person("","","");
       _p.firstname = this.people[p].split(" ")[0];
       _p.lastname = this.people[p].split(" ")[1];
       _p.guid = UtilityService.uuid();
@@ -133,7 +133,7 @@ export class PersonComponent implements OnInit {
       "ARCHITECT" : false
     }
     for( let k in roles ){
-      roles[k] = (Math.floor(Math.random() * 2) == 0);
+      (roles as any)[k] = (Math.floor(Math.random() * 2) == 0);
     }
     return roles;
   }

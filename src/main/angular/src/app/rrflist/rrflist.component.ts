@@ -5,6 +5,7 @@ import { ApplicationService } from '../../shared/service/application/application
 import { Application } from '../../shared/model/application';
 import { RRFStatus } from '../../shared/model/rrfstatus';
 import { ActivatedRoute } from '@angular/router';
+import { ActivityLogType } from 'src/shared/model/activitylogtype';
 
 @Component({
   selector: 'app-rrflist',
@@ -13,10 +14,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RRFListComponent implements OnInit {
 
-  rrflist : Array<ReleaseRRF>;
-  applist : Array<Application>;
+  rrflist !: Array<ReleaseRRF>;
+  applist !: Array<Application>;
   rrf_filter : string = 'all';
-  query_filter : string;
+  query_filter !: string;
 
   constructor(public rrfservice:RRFService, public route:ActivatedRoute, public appsvc:ApplicationService) {
     const at_risk = this.route.snapshot.queryParamMap.get('atrisk');
@@ -28,19 +29,21 @@ export class RRFListComponent implements OnInit {
 
   ngOnInit() {
     this.list();
-    this.appsvc.getApplicationList().then((resp)=>{
+    (this.appsvc as any).getApplicationList().then((resp:any)=>{
       this.applist = resp;
     })
   }
 
   public list(){
-    this.rrfservice.list(1,20).then((resp:Array<ReleaseRRF>)=>{
+    this.rrfservice.list(1,20).then((resp:any)=>{
       this.rrflist = resp;
       this.rrflist = this.rrflist.filter((el:ReleaseRRF,idx,arr)=>{
         if( this.rrf_filter == 'all' ){
           return true;
         }
-        return el.status == RRFStatus[this.rrf_filter.toUpperCase()];
+        //let rrfstatus = Object(RRFStatus)[Object.values(RRFStatus).indexOf(this.rrf_filter.toUpperCase())];
+        let rrfstatus = Object(RRFStatus)[this.rrf_filter.toUpperCase()];
+        return el.status == rrfstatus;
       });
     },(rej)=>{
       alert("ERROR: "+rej)
@@ -54,9 +57,14 @@ export class RRFListComponent implements OnInit {
 
   public appinfo(appid:string){
     if( this.applist !== undefined ){
-      const _app : Application = this.applist.find(app => app.guid === appid);
+      let _app : Application = this.applist.find(app => app.guid === appid)!;
       return _app;
     }
+    return new Application();
+  }
+
+  public checkLogType(tp:ActivityLogType,key:string) {
+    return Object(ActivityLogType)[key] == tp;
   }
 
 }

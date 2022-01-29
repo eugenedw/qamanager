@@ -14,7 +14,7 @@ export class TeamlistComponent implements OnInit {
   constructor(public personsvc:PersonService) { }
 
   ngOnInit() {
-    this.personsvc.getPeople(1,10).then((res:Array<Person>)=>{
+    this.personsvc.getPeople(1,10).then((res:any)=>{
       this.personlist = res;
     });
   }

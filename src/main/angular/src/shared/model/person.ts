@@ -6,16 +6,17 @@ export class Person {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
+        this.dt_created = new Date();
     }
 
-    guid:string;
+    guid!:string;
     firstname:string;
     lastname:string;
     email:string;
-    phone:string;
+    phone!:string;
     roles:any = {};
     applications:Array<string> = [];
     dt_created:Date;
-    comments:string;
+    comments!:string;
 
 }

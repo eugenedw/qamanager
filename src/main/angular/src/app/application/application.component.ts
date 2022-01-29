@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Application } from '../../shared/model/application';
-import { ActivatedRoute } from '@angular/router';
+import { ProgramArea } from '../../shared/model/program.area';
+import { ReleaseRRF } from '../../shared/model/releaserrf';
 import { ApplicationService } from '../../shared/service/application/application.service';
 import { ProgramService } from '../../shared/service/program/program.service';
-import { ProgramArea } from '../../shared/model/program.area';
 import { RRFService } from '../../shared/service/rrf/rrf.service';
-import { ReleaseRRF } from '../../shared/model/releaserrf';
 
 @Component({
   selector: 'app-application',
@@ -14,21 +14,24 @@ import { ReleaseRRF } from '../../shared/model/releaserrf';
 })
 export class ApplicationComponent implements OnInit {
 
-  public currentApplication:Application;
-  public programlist:Array<ProgramArea>;
-  public releases:Array<ReleaseRRF>;
+  public currentApplication!:Application;
+  public programlist!:Array<ProgramArea>;
+  public releases!:Array<ReleaseRRF>;
 
   public current_tab:string = 'app-tab-general';
 
   constructor(public route:ActivatedRoute, public appsvc:ApplicationService, 
-              public programsvc:ProgramService, public rrfsvc:RRFService) { }
+              public programsvc:ProgramService, public rrfsvc:RRFService, public router:Router) { 
+  }
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('appid');
-    if( id != "new" ){
-      this.appsvc.getApplicationList().then((resp:Array<Application>)=>{
-        this.currentApplication = resp.find(app => app.guid === id);
-        this.rrfsvc.getByApp(this.currentApplication.guid).then((resp:Array<ReleaseRRF>)=>{
+    if( id != "new" && id != null ){
+      this.appsvc.getApplicationById(id).then((resp:any)=>{
+        this.currentApplication = resp;
+        //resp.find(app => app.guid === id);
+        this.rrfsvc.getByApp(this.currentApplication.guid).then((resp:any)=>{
+          //resp : Array<ReleaseRRF>
           this.releases = resp;
         });
       });
@@ -47,6 +50,14 @@ export class ApplicationComponent implements OnInit {
 
   printApplication(){
     return JSON.stringify(this.currentApplication,null,2);
+  }
+
+  saveapplication(){
+    this.appsvc.saveApplication(this.currentApplication)
+      .then((app:any)=>{
+        //app : Application
+        this.router.navigateByUrl("/application/view/".concat(app.guid))
+    });
   }
 
 }

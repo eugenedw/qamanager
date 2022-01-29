@@ -1,18 +1,18 @@
-<div class="container">
+<div class="container" *ngIf="currentApplication">
   <div class="rrf-edit-container">
     <h2><span *ngIf="currentApplication.guid===undefined">Create an</span>
-        <span *ngIf="currentApplication.guid!==undefined">Edit</span> Application</h2>
-        <button class="btn btn-sm btn-success push-right" [routerLink]="['/rrf/new']" [queryParams]="{app_id: currentApplication.guid}" type="button">Create Release</button>
-    <form>
+        <span *ngIf="currentApplication.guid!==undefined">Edit</span> Application <span class="blue">[{{currentApplication.name}}]</span></h2>
+        <button class="btn btn-sm btn-success push-right mt-4" [routerLink]="['/rrf/new']" [queryParams]="{app_id: currentApplication.guid}" type="button">Create Release</button>
+    <form class="mt-4">
       <nav>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)" 
+          <a class="nav-link" href="javascript:void(0)"
               (click)="current_tab='app-tab-general'"
               [ngClass]="{'active':current_tab=='app-tab-general'}">General</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)" 
+          <a class="nav-link" href="javascript:void(0)"
               (click)="current_tab='app-tab-releases'"
               [ngClass]="{'active':current_tab=='app-tab-releases'}">Releases</a>
         </li>
@@ -30,7 +30,7 @@
             <div class="col-6">
               <div class="form-group">
                 <label for="first_name">Application ID</label>
-                <input type="text" class="form-control" name="app_id" placeholder="456" [(ngModel)]="currentApplication.app_id">
+                <input type="text" class="form-control" name="app_id" placeholder="456" [(ngModel)]="currentApplication.appId">
               </div>
             </div>
             <div class="col-6">
@@ -44,17 +44,17 @@
             <div class="col">
               <div class="form-group">
                 <label for="govt_prod_owner">Govt. POC</label>
-                <input type="text" class="form-control" name="gov_prod_owner" placeholder="George P. Burdell" [(ngModel)]="currentApplication.govt_owner">
+                <input type="text" class="form-control" name="gov_prod_owner" placeholder="George P. Burdell" [(ngModel)]="currentApplication.productOwner">
               </div>
             </div>
             <div class="col">
               <div class="form-group">
                 <label for="proj_mgr">Project Manager</label>
-                <input type="text" class="form-control" name="proj_mgr" placeholder="Jane Mitchell" [(ngModel)]="currentApplication.proj_mgr">
+                <input type="text" class="form-control" id="proj_mgr" name="proj_mgr" placeholder="Jane Mitchell" [(ngModel)]="currentApplication.projectManager">
               </div>
             </div>
           </div>
-    
+
           <div class="row">
             <div class="col">
               <div class="pt-4 pb-2">
@@ -62,44 +62,45 @@
               </div>
               <div class="mt-1">
                 <div class="form-check form-check-inline mr-5">
-                  <input class="form-check-input" type="radio" name="automated_none" value="0" [(ngModel)]="currentApplication.automated">
+                  <input class="form-check-input" type="radio" name="automated_none" [value]="0" [(ngModel)]="currentApplication.automated">
                   <label class="form-check-label" for="automated_none">Not Automated (Manual)</label>
                 </div>
                 <div class="form-check form-check-inline mr-5">
-                  <input class="form-check-input" type="radio" name="automated_partially" value="1" [(ngModel)]="currentApplication.automated">
+                  <input class="form-check-input" type="radio" name="automated_partially" [value]="1" [(ngModel)]="currentApplication.automated">
                   <label class="form-check-label" for="automated_partially">Partially Automated</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="automated_full" value="2" [(ngModel)]="currentApplication.automated">
+                  <input class="form-check-input" type="radio" name="automated_full" [value]="2" [(ngModel)]="currentApplication.automated">
                   <label class="form-check-label" for="automated_full">Fully Automated (CI/CD)</label>
                 </div>
               </div>
             </div>
           </div>
-    
+
           <div class="row mt-4">
             <div class="col">
               <div class="form-group">
                 <label for="prog_select_id">Program Area</label>
-                <select class="form-control" name="prog_select_id" [(ngModel)]="currentApplication.program_id">
+                <select class="form-control" name="prog_select_id" [(ngModel)]="currentApplication.programId">
                   <option value="">Select an Program Area</option>
-                  <option *ngFor="let program of programlist" [value]="program.guid">{{program.name}}</option>
-                </select> 
+                  <option *ngFor="let program of programlist" [value]="program.guid">[{{program.shortName}}] {{program.name}}</option>
+                </select>
               </div>
             </div>
           </div>
-          
+
           <div class="row mt-3">
             <div class="col">
               <div class="form-group">
                 <label for="application_comment">Comments</label>
-                <textarea class="form-control" name="application_comment" rows="4" [(ngModel)]="currentApplication.comment" placeholder="Details for this application..."></textarea>
+                <textarea class="form-control" name="application_comment" rows="4" [(ngModel)]="currentApplication.comments" placeholder="Details for this application..."></textarea>
               </div>
             </div>
           </div>
           <div class="row mt-2 mb-5">
             <div class="col">
-              <button class="btn btn-success pull-left" type="button" (click)="addapplication()">Save</button>
+              <button class="btn btn-success pull-left" type="button" (click)="saveapplication()">Save</button>
+              <button class="btn btn-primary pull-left ml-2" type="button" [routerLink]="['/application/list']">Back</button>
             </div>
           </div>
         </div>
@@ -142,9 +143,9 @@
           </div>
         </div>
       </div>
-      
+
     </form>
-    
+
     <pre class="alert alert-dark mt-5" [hidden]="1==1">{{printApplication()}}</pre>
   </div>
 </div>

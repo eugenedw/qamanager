@@ -64,7 +64,7 @@
         <div class="col">
           <div class="form-group">
             <h5 for="person_comment">Comments</h5>
-            <textarea class="form-control" name="person_comment" rows="4" [(ngModel)]="currentPerson.comment" placeholder="Details for this team member..."></textarea>
+            <textarea class="form-control" name="person_comment" rows="4" [(ngModel)]="currentPerson.comments" placeholder="Details for this team member..."></textarea>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
               </div>
               <div *ngIf="appid != ''">
                 <div class="input-group mb-2">
-                  <input type="text" class="form-control" disabled name="person_app_{{idx}}" value="{{printapplication(appid).name}}">
+                  <input type="text" class="form-control" disabled name="person_app_{{idx}}" value="{{printapplication(appid)!.name}}">
                   <div class="input-group-append">
                     <button class="btn btn-danger" type="button" (click)="removeapplication(appid)"><b>X</b></button>
                   </div>

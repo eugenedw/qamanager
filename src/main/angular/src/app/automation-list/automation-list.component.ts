@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Application } from 'src/shared/model/application';
 import { Automation } from '../../shared/model/automation';
 import { RRFService } from '../../shared/service/rrf/rrf.service';
 
@@ -14,6 +15,10 @@ export class AutomationListComponent implements OnInit {
   constructor(public rrfservice:RRFService) { }
 
   ngOnInit() {
+  }
+
+  appinfo(appid:string){
+    return new Application();
   }
 
 }

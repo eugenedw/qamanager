@@ -1,14 +1,41 @@
 <div class="application-list-container container">
+  <div class="upload-alert-message" *ngIf="applicationUpload.status == 'complete'">
+    <ngb-alert [type]="applicationUpload.error?'danger':'success'" [dismissible]="true">
+      <span *ngIf="applicationUpload.error === undefined || !applicationUpload.error"><strong>Success</strong></span>
+      <span *ngIf="applicationUpload.error"><strong>Error</strong></span>
+      &nbsp;
+      {{applicationUpload.response}}
+    </ngb-alert>
+  </div>
   <div class="row">
     <div class="col">
       <h4 class="pl-2 pt-3"><b>Applications</b></h4>
     </div>
     <div class="col">
       <a class="btn btn-sm btn-outline btn-success push-right mb-2 table-header-create" [routerLink]="['/application/view/new']">Add Application</a>
+      <a class="btn btn-sm btn-outline btn-primary push-right mb-2 mr-1" [routerLink]="['/program/list']">Programs</a>
+      <label class="btn btn-sm btn-info btn-outline push-right mr-1">
+        Upload File 
+        <input type="file" style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+      </label>
+      <div class="clear"></div>
+      <div class="application-discovery-info push-right" *ngIf="applicationUpload.ready">
+        {{applicationUpload.applications.length}} Applications are ready for upload. Select to review or continue processing.
+        <a class="btn btn-sm btn-primary mr-2 mt-1" href="javascript:void(0)" (click)="previewApplicationUpload(application_upload_modal)">Review</a>
+        <a class="btn btn-sm btn-info mt-1" href="javascript:void(0)" (click)="completeApplicationUpload()">Continue</a>
+      </div>
     </div>
   </div>
   <div class="clear"></div>
-  <table class="table mt-4">
+  <div class="row mt-3">
+    <div class="col-4">
+      <input type="text" class="form-control" [(ngModel)]="filter.app_name" placeholder="Filter Applications" />
+    </div>
+    <div class="col-4">
+      <input type="text" class="form-control" [(ngModel)]="filter.program_name" placeholder="Filter Programs" />
+    </div>
+  </div>
+  <table class="table mt-3" *ngIf="applications">
     <thead>
       <tr>
         <th scope="col" class="border-top-0 col-4">Application</th>
@@ -24,24 +51,19 @@
         No Applications Added.
       </td>
     </tr>
-    <tr *ngIf="applications.length > 0">
-      <td><input type="text" class="form-control" [(ngModel)]="filter.app_name" placeholder="Filter Applications" /></td>
-      <td><input type="text" class="form-control" [(ngModel)]="filter.program_name" placeholder="Filter Programs" /></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr *ngFor="let app of applications | abstractfilter: 'name':filter.app_name | abstractfilter: 'program.name':filter.program_name">
       <td>
         <a [routerLink]="['/application/view/'+app.guid]">{{app.name}}</a>
       </td>
       <td>
-        {{app.program.name}}
+        <span *ngIf="app.program">
+          {{app.program.name}}
+        </span>
       </td>
       <td>
         <small>
-        <b>Govt. POC: </b> {{app.govt_owner}}<br />
-        <b>Project Manager: </b> {{app.proj_mgr}}
+        <b>Govt. POC: </b> {{app.productOwner}}<br />
+        <b>Project Manager: </b> {{app.projectManager}}
         </small>
       </td>
       <td colspan="2">
@@ -51,3 +73,41 @@
     </tbody>
   </table>
 </div>
+
+
+<ng-template #application_upload_modal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Uploaded Applications</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="program_name">Application</label>
+        <div class="input-group">
+          <select class="form-control" (change)="applicationPreviewSelect($event)" name="applicationUpload_editselect" 
+                    [(ngModel)]="applicationUpload.editselect_str" style="width: 100%">
+            <option value="">Select an Application ({{applicationUpload.applications.length}})</option>
+            <option *ngFor="let app of applicationUpload.applications" [value]="app | json">{{app.name}}</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-group" *ngIf="applicationUpload.editselect">
+        <div class="mt-3">
+          <b>Selected Application</b>
+          <div class="mt-2">
+            {{applicationUpload.editselect.name}}
+            <br />
+            <small class="blue">{{applicationUpload.editselect.program.name}}</small>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Close</button>
+  </div>
+</ng-template>

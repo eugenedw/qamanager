@@ -1,21 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { AbstractFilterPipe } from '../shared/pipe/abstractfilter.pipe';
+import { ApplicationService } from '../shared/service/application/application.service';
+import { ProgramService } from '../shared/service/program/program.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { RRFComponent } from './rrf/rrf.component';
-import { RRFListComponent } from './rrflist/rrflist.component';
-import { ApplicationService } from '../shared/service/application/application.service';
-import { HttpClientModule } from '@angular/common/http';
-import { ProgramService } from '../shared/service/program/program.service';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { TeamlistComponent } from './teamlist/teamlist.component';
-import { PersonComponent } from './person/person.component';
 import { ApplicationListComponent } from './application-list/application-list.component';
-import { AbstractFilterPipe } from '../shared/pipe/abstractfilter.pipe';
 import { ApplicationComponent } from './application/application.component';
 import { AutomationListComponent } from './automation-list/automation-list.component';
+import { HomeComponent } from './home/home.component';
+import { PersonComponent } from './person/person.component';
+import { ProgramListComponent } from './program-list/program-list.component';
+import { RRFComponent } from './rrf/rrf.component';
+import { RRFListComponent } from './rrflist/rrflist.component';
+import { TeamlistComponent } from './teamlist/teamlist.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,18 +29,21 @@ import { AutomationListComponent } from './automation-list/automation-list.compo
     ApplicationListComponent,
     AbstractFilterPipe,
     ApplicationComponent,
-    AutomationListComponent
+    AutomationListComponent,
+    ProgramListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbAlertModule
   ],
   providers: [
     ApplicationService,
-    ProgramService
+    ProgramService,
+    Title
   ],
   bootstrap: [AppComponent]
 })

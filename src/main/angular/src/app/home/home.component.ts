@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Environment } from 'src/environments/environment-variables';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public title = Environment['ANGULAR_APP_TITLE'];
+  
   constructor() { }
 
   ngOnInit() {

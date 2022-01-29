@@ -14,7 +14,7 @@ export class PersonService {
       let promise = new Promise((resolve,reject)=>{
           let url = "/assets/data/sample/team/list.json";
           this.http.get<Array<Person>>(url).toPromise().then((resp)=>{
-              let person = resp.find(p => p.guid === guid);
+              let person = resp!.find(p => p.guid === guid);
               resolve(person);
           });
       });
@@ -31,7 +31,7 @@ export class PersonService {
       return promise;
   }
 
-  printroles(roles){
+  printroles(roles:any){
     let rolarr = [];
     for( let k in roles ){
       if( roles[k] ){

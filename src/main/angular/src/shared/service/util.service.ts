@@ -15,7 +15,7 @@ export class UtilityService {
         arr.splice(ind,1);
     }
     
-    public arrayTrackBy(index, item) {
+    public arrayTrackBy(index:any,item:any) {
         return index;
     }
 

@@ -1,0 +1,7 @@
+# other ignores
+node_modules
+.idea
+target
+.DS_Store
+rebel.xml
+.vscode

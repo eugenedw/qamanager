@@ -33,9 +33,8 @@
     <form class="mt-4">
       <nav>
         <label class="btn btn-sm push-right" *ngIf="currentRRF.status != 0" 
-        [ngClass]="{'btn-success':currentRRF.status==1,
+        [ngClass]="{'btn-success':currentRRF.status==1||currentRRF.status==3,
                     'btn-info':currentRRF.status==2,
-                    'btn-success':currentRRF.status==3,
                     'btn-danger':currentRRF.status==5}">{{rrfservice.statusText(currentRRF.status)}}</label>
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -105,7 +104,7 @@
           </div>
           <div class="form-group">
             <label for="app_select_id">Application <small><a class="" *ngIf="currentRRF.app_id" [routerLink]="['/application/view/'+currentRRF.app_id]">View</a></small></label>
-            <select class="form-control" name="app_select_id" [(ngModel)]="currentRRF.app_id" (change)="updateRRFProgram($event.target.value)">
+            <select class="form-control" name="app_select_id" [(ngModel)]="currentRRF.app_id" (change)="updateRRFProgram($any($event.target).value)">
               <option value="">Select an Application</option>
               <option *ngFor="let app of applicationList" [value]="app.guid">{{app.name}}</option>
             </select>        
@@ -443,9 +442,9 @@
           </div>
           <div class="input-group mb-2" *ngFor="let p of currentRRF.team_list; let idx = index; trackBy: util.arrayTrackBy">
             <div class="input-group-prepend">
-              <span class="input-group-text"><small>{{personsvc.printroles(person(p).roles)}}</small></span>
+              <span class="input-group-text"><small>{{personsvc.printroles(person(p)!.roles)}}</small></span>
             </div>
-            <input type="text" class="form-control" disabled style="background-color: #fff" name="qa_team_{{idx}}" value="{{person(p).firstname}} {{person(p).lastname}}">
+            <input type="text" class="form-control" disabled style="background-color: #fff" name="qa_team_{{idx}}" value="{{person(p)!.firstname}} {{person(p)!.lastname}}">
             <div class="input-group-append">
               <button class="btn btn-danger" type="button" (click)="util.removeFromList(currentRRF.team_list,idx)"><b>X</b></button>
             </div>

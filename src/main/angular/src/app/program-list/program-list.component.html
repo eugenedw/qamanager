@@ -1,0 +1,74 @@
+<div class="program-list-container container">
+  <div class="row">
+    <div class="col">
+      <h4 class="pl-2 pt-3"><b>Programs</b></h4>
+    </div>
+    <div class="col">
+      <a class="btn btn-sm btn-outline btn-success push-right mb-2 table-header-create" (click)="editProgram(content,{})" href="javascript:void(0)">Add Program</a>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="row mt-3">
+    <div class="col-4">
+      <input type="text" class="form-control" [(ngModel)]="filter.program_name" placeholder="Filter Programs" />
+    </div>
+  </div>
+  <table class="table mt-3" *ngIf="programs">
+    <thead>
+      <tr>
+        <th scope="col" class="border-top-0 col-3">Program Name</th>
+        <th scope="col" class="border-top-0 col-3">Short Name</th>
+        <th scope="col" class="border-top-0 col-4">Applications</th>
+        <th class="border-top-0"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="programs.length == 0">
+        <td colspan="4">
+          No Programs Added.
+        </td>
+      </tr>
+      <tr *ngFor="let program of programs | abstractfilter: 'name':filter.program_name">
+        <td>{{program.name}}</td>
+        <td>{{program.shortName}}</td>
+        <td>
+          <div *ngIf="program.applications && program.applications.length > 0">
+            <span *ngFor="let app of program.applications">
+              {{app.name}}
+            </span>
+          </div>
+        </td>
+        <td><a class="btn btn-sm btn-primary push-right mb-2" href="javascript:void(0)" (click)="editProgram(content,program)">Edit</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" *ngIf="currentProgram.guid !== undefined">Edit Program</h4>
+    <h4 class="modal-title" id="modal-basic-title" *ngIf="currentProgram.guid === undefined">Create Program</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="program_name">Program Name</label>
+        <div class="input-group">
+          <input id="program_name" class="form-control" placeholder="Program Name" name="program_name" type="text" [(ngModel)]="currentProgram.name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="short_name">Short Name</label>
+        <div class="input-group">
+          <input id="short_name" class="form-control" placeholder="eg. ATR" name="short_name" type="text" [(ngModel)]="currentProgram.shortName">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="saveProgram()">Save</button>
+  </div>
+</ng-template>

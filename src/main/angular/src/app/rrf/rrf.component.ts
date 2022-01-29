@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ApplicationService } from '../../shared/service/application/application.service';
-import { ProgramService } from '../../shared/service/program/program.service';
-import { ReleaseRRF } from '../../shared/model/releaserrf';
-import { Application } from '../../shared/model/application';
-import { UtilityService } from '../../shared/service/util.service';
-import { RRFService } from '../../shared/service/rrf/rrf.service';
-import { PersonService } from '../../shared/service/person/person.service';
-import { Person } from '../../shared/model/person';
 import { ActivityLog } from '../../shared/model/activitylog';
 import { ActivityLogType } from '../../shared/model/activitylogtype';
+import { Application } from '../../shared/model/application';
+import { Person } from '../../shared/model/person';
+import { ReleaseRRF } from '../../shared/model/releaserrf';
 import { RRFStatus } from '../../shared/model/rrfstatus';
+import { ApplicationService } from '../../shared/service/application/application.service';
+import { PersonService } from '../../shared/service/person/person.service';
+import { ProgramService } from '../../shared/service/program/program.service';
+import { RRFService } from '../../shared/service/rrf/rrf.service';
+import { UtilityService } from '../../shared/service/util.service';
 
 @Component({
   selector: 'app-rrf',
@@ -19,18 +19,18 @@ import { RRFStatus } from '../../shared/model/rrfstatus';
 })
 export class RRFComponent implements OnInit {
 
-  public rrfstatus = undefined;
-  public applicationList = undefined;
-  public currentRRF : ReleaseRRF;
+  public rrfstatus !: string;
+  public applicationList !: Array<any>;
+  public currentRRF !: ReleaseRRF;
   public rrfappid = undefined;
   public programs = undefined;
   public current_tab = 'rrf-tab-general';
   public rrf_search = undefined;
   public team_select = "";
-  public personlist : Array<Person> = undefined;
-  public activity_log_entry : string;
-  public activity_log_entry_problem : boolean;
-  public prior_status : RRFStatus;
+  public personlist !: Array<Person>;
+  public activity_log_entry !: string;
+  public activity_log_entry_problem !: boolean;
+  public prior_status !: RRFStatus;
 
   constructor(public route:ActivatedRoute, 
               public router:Router,
@@ -51,18 +51,18 @@ export class RRFComponent implements OnInit {
       this.currentRRF = new ReleaseRRF();
       this.currentRRF.guid = UtilityService.uuid();
       this.currentRRF.dt_created = new Date();
-      this.currentRRF.app_id = app_id;
+      this.currentRRF.app_id != app_id;
     }
     else if( id == 'find' ){
       this.rrfstatus = "find";
       return;
     }
-    else {
-      this.rrfservice.get(id).then((resp:ReleaseRRF)=> {
+    else if( id !== null ){
+      this.rrfservice.get(id).then((resp:any)=> {
         this.currentRRF = resp;
       });
     }
-    this.applicationService.getApplicationList().then((resp)=>{
+    this.applicationService.getApplicationList()!.then((resp)=>{
       this.applicationList = resp;
       if( this.currentRRF.app_id !== undefined && this.currentRRF.app_id != null && this.currentRRF.app_id != "" ){
         this.updateRRFProgram(this.currentRRF.app_id);
@@ -75,7 +75,7 @@ export class RRFComponent implements OnInit {
     this.programService.getPrograms().then((resp)=>{
       this.programs = resp;
     })
-    this.personsvc.getPeople(1,1).then((resp:Array<Person>)=>{
+    this.personsvc.getPeople(1,1).then((resp:any)=>{
       if( this.currentRRF.team_list === undefined ){
         this.currentRRF.team_list = [];
       }
@@ -86,7 +86,7 @@ export class RRFComponent implements OnInit {
   updateRRFProgram(application_id:string){
     this.currentRRF.app_id = application_id;
     const _app : Application = this.applicationList.find(app => app.guid === application_id)
-    this.currentRRF.program_id = _app.program_id;
+    this.currentRRF.program_id = _app.programId;
   }
 
   findrelease(){
@@ -99,7 +99,7 @@ export class RRFComponent implements OnInit {
   }
 
   recommendedResources(){
-    let recommend = [];
+    let recommend:Array<any> = [];
     if( this.currentRRF.app_id !== undefined && this.currentRRF.app_id != "" ){
       recommend = this.personlist.filter(p => p.applications && p.applications.indexOf(this.currentRRF.app_id) > -1 );
     }
@@ -107,8 +107,8 @@ export class RRFComponent implements OnInit {
   }
 
   writeProgram(programId:string){
-    if( programId !== undefined && programId != null ){
-      return this.programs.find(prog => prog.guid === programId );
+    if( programId !== undefined && programId != null && this.programs !== undefined ){
+      return (this.programs as any).find((prog: { guid: string; }) => prog.guid === programId );
     }
   }
 
@@ -147,7 +147,7 @@ export class RRFComponent implements OnInit {
     },500);
   }
 
-  person(id){
+  person(id:any){
     return this.personlist.find(person => person.guid === id); 
   }
 

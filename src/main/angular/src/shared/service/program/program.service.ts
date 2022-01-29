@@ -1,5 +1,5 @@
-import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 import { ProgramArea } from "../../model/program.area";
 
 @Injectable({
@@ -7,18 +7,25 @@ import { ProgramArea } from "../../model/program.area";
 })
 export class ProgramService {
 
-    public programList : Array<ProgramArea>;
+    public programList !: Array<ProgramArea>;
 
-    programDataUrl = "/assets/data/programs.json";
+    programDataUrl = "/api/program";
 
     public constructor(public http:HttpClient){
-        this.http.get<any>(this.programDataUrl).toPromise().then((resp)=>{
-            this.programList = resp;
-        });
     }
 
     public getPrograms() {
-        return this.http.get<any>(this.programDataUrl).toPromise();
+        return this.http.get<any>(this.programDataUrl.concat("/list")).toPromise();
+    }
+
+    public saveProgram(_program:ProgramArea){
+        if( _program.guid === undefined 
+                || _program.guid.trim() == "" ){
+            return this.http.post(this.programDataUrl,_program).toPromise();
+        }
+        else{
+            return this.http.put(this.programDataUrl,_program).toPromise();
+        }
     }
 
     public getProgramById(id:string){
