@@ -1,0 +1,3122 @@
+[
+    {
+      "guid": "df62f6ae-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ACTUR Web Application",
+      "appId": "246",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ACTUR",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62f7bc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ADR Data Update (PDR to ADR triggers / Replication )",
+      "appId": "N/A",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62f8de-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ADR Web Service Administration Mgmt App",
+      "appId": "328",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "aam.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62f99c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ADR/ADW Data Model",
+      "appId": "N/A",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62fa32-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Affiliation Maintenance (AFL Maintenance)",
+      "appId": "",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "AFL",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62fabe-11c8-11ec-b9cc-3a02744196a1",
+      "name": "AFIP Web Service (JEE)",
+      "appId": "620",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "afip.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62fb4a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "App Monitor Shared Library",
+      "appId": "772",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sharedlib-appmonitor.war",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62fc1c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Application Monitor Aggregator (AMAGG)",
+      "appId": "661",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "AMAGG",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df62fcbc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ASIS Shared Library",
+      "appId": "529",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sharedlib-websecurity.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62fd3e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Audit Model Web Service",
+      "appId": "353",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "amws.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62fdca-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Batch Research & Analysis Sub-System Web Application",
+      "appId": "657",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "brass.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62fe60-11c8-11ec-b9cc-3a02744196a1",
+      "name": "BBS Web Application",
+      "appId": "373",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "bbs.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62fee2-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Beneficiary Support Tool Web App",
+      "appId": "486",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "bst.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df62ff6e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Benefits Administration and Support Console Web Application",
+      "appId": "464",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "administratorsupport.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df62fff0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Benefits for Education Administrative Services Tool (BEAST)",
+      "appId": "825",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "beast",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630072-11c8-11ec-b9cc-3a02744196a1",
+      "name": "BWE Web Application",
+      "appId": "271",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "BWE",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630158-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CAC Pin Reset (CPR)",
+      "appId": "378",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "cpr",
+      "type": 4,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df6301da-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CCD Fee Web App",
+      "appId": "290",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ccdfee",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63025c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CCD Totals Claims Inquiry (J2EE)",
+      "appId": "1251",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ccdtia",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6302f2-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CCD Update Agent Web Application (J2EE)",
+      "appId": "274",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CCD Update",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630374-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Central Issuance Facility Pull (CIF) Pull",
+      "appId": "299",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CIF/PPS",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df6303ec-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Central Issuance Facility Pull (CIF) Push",
+      "appId": "300",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CIF/PPS",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df63046e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ch33extract",
+      "appId": "4287",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ch33extract.sql",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6304e6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CHAMPVA Bat",
+      "appId": "652",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "champva",
+      "type": 6,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630572-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Civilian PCM Maintenance Load Application (CPCMM)",
+      "appId": "233",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "cpcmm",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63063a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Civilian Update Web Application (CUF)",
+      "appId": "259",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CIV UPT ",
+      "type": 6,
+      "automated": 2,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630716-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CL_ADR_DATA_UPDATE (CLADRSYNC Web, Classified Lab data update )",
+      "appId": "663",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CLADR",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6307e8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Claims Coverage Eligibility Agent Web App (CCEA)",
+      "appId": "597",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ccea",
+      "type": 6,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630892-11c8-11ec-b9cc-3a02744196a1",
+      "name": "COAL Web Application ",
+      "appId": "691",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "coal.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df630932-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CRDIRS",
+      "appId": "667",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CRDIRS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6309b4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CRIMSBAT",
+      "appId": "630",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CRIMSBAT",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630a36-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CRXS",
+      "appId": "635",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CRXS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630af4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF Health Care Coverage Shared Library",
+      "appId": "731",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sharedlib-cuf-healthcc-processors",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630bbc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF Other Health Care Coverage Shared Library (OtherGovernmentProgram subject processor - OGP)",
+      "appId": "733",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sharedlib-cuf-other-healthcare-processors",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630c3e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF Patient Registry Shared Library",
+      "appId": "",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CUF",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630cfc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF Person Shared Library ",
+      "appId": "737",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sharedlib-cuf-person-processors-version # here.ear",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df630d88-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF Valid Value data update",
+      "appId": "2992",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": " ",
+      "type": 8,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df630e0a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CUF-EJB Probabilistic Search",
+      "appId": "571",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Common Update Framework EJB (J2EE)",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df630e8c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Customer Update Access Data Warehouse (CUADW)",
+      "appId": "164",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "cuadw",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df630f0e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "CWIMBAT",
+      "appId": "715",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "CWIMBAT",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df630fa4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Database Extract Batch Client (J2EE)",
+      "appId": "548",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dbxbat",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df631026-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Death Batch Web Application",
+      "appId": "562",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "deathbat",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6310bc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DEERS Claims Web Service Application (J2EE)",
+      "appId": "437",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dcs",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63113e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DEERS Registration Service (DRGS)",
+      "appId": "477",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DRGS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df631210-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Assistance Awards Data System (DAADS)",
+      "appId": "589",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "daads",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df63130a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Biometric Identification System (DBIDS)",
+      "appId": "495",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DBIDS",
+      "type": 4,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df63138c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Casualty Analysis System (DCAS)",
+      "appId": "505",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dcas",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df631472-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Central Index of Investigations",
+      "appId": "629",
+      "programId": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DCII",
+      "type": 8,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSA"
+      }
+    },
+    {
+      "guid": "df63156c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Travel System Archive Listener (DTS-AL)",
+      "appId": "678",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dtsal",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df6315f8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Defense Travel System Archive Management Information System (DTSA-MIS)",
+      "appId": "620",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dtsamis",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df63168e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Dental Notifications System Web App (J2EE) ",
+      "appId": "497",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ntfyD",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63171a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DENTALRPT Cognos Project Folder (TDP and ADDP Reports)",
+      "appId": "230",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Deers Dental  Policy Reports",
+      "type": 7,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63179c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Deployable End-to-End EIAS Mangement and updating System (DEIAS)\n",
+      "appId": "4828",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DEIAS",
+      "type": 4,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df631814-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Deployment CUF Client (DPLYBAT)",
+      "appId": "N/A",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DPLYBAT",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6318aa-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Derive Benefits",
+      "appId": "780",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "drvBnf.jar",
+      "type": 5,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63192c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Direct Care PCM Maintenance Load Application (DCPMM)",
+      "appId": "232",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dcpcmm",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6319a4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DISS - Defense Information System for Security",
+      "appId": "N/A",
+      "programId": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DISS",
+      "type": 8,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSA"
+      }
+    },
+    {
+      "guid": "df631a26-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Common Components (DC3) Client Web Application",
+      "appId": "392",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dc3",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df631c1a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Public Website (DWP)",
+      "appId": "567",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dwp",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df631cec-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Reporting System Web App",
+      "appId": "579",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dmdcrs",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df631dfa-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Support Office IVR Web Application",
+      "appId": "463",
+      "programId": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ivr.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+        "name": "CCC - Customer Contact Center"
+      }
+    },
+    {
+      "guid": "df631e86-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Support Office Web Application ",
+      "appId": "454",
+      "programId": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dso",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+        "name": "CCC - Customer Contact Center"
+      }
+    },
+    {
+      "guid": "df631f08-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DMDC Support Office Web Request (DWR) Application",
+      "appId": "225",
+      "programId": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dwr.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+        "name": "CCC - Customer Contact Center"
+      }
+    },
+    {
+      "guid": "df631f94-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DoD EDI Change Notification Service (DECNS)",
+      "appId": "588",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DECNS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df632020-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DoD Family Advocacy Program Incident Severity Rating Scale (FAPSS)",
+      "appId": "674",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "FAPSS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df632098-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DoD Person Search Web App (DPS Web)",
+      "appId": "551",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dps",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df632174-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DoD Workforce Certificate (DWC Stand alone App)",
+      "appId": "418",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dwc",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df632214-11c8-11ec-b9cc-3a02744196a1",
+      "name": "DoD/VA ID Reconciliation Service (DVIRS)",
+      "appId": "489",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "DVIRS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df6322a0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application  (NAL)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632322-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application (Claims)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6324da-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application (Claims-Lite)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632584-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application (Elig)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632606-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application (Elig-Lite)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632688-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Eligibility and Demographics Web Service(EDS) Web Application (Transformation-Layer)",
+      "appId": "732",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eds_webservice.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63270a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Enterprise Identity Attribute Web Service (EIAS)",
+      "appId": "581",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "eias",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df63278c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Enterprise Monitoring and Management Accounts \n(Application Provisioning Web Application)",
+      "appId": "386",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "EMMA",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df63280e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Fee/Premium Interface (FPI) Web App",
+      "appId": "903",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "befp T3",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6328a4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "FeeWaiverEntitlement Pega App",
+      "appId": "754",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "FeeWvrEnt.jar",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63291c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "GFMDI (BABP)",
+      "appId": "967",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df63299e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "GOFO Decision Support System Web Application",
+      "appId": "426",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Gofo.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df632a34-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Guard Reserve Active Service Batch Application (GRAS)",
+      "appId": "576",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "grasbat",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632aac-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Guard Reserve Initial Duty Batch Client",
+      "appId": "546",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "gridbat",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632b24-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HCBnfBenElig Pega App",
+      "appId": "349",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HCBnf_BenElig.zip",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632bc4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HCBnfCoPayFactor Pega App",
+      "appId": "488",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HCBnf_CoPayFactor.zip",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632c46-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HL7 Notifications Receiver Service (HNRS)",
+      "appId": "665",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HNRS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df632ce6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HL7 Notifications Sender Application (HNSA)",
+      "appId": "666",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HNSA",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df632d68-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HL7Imm Web Application",
+      "appId": "385",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HL7",
+      "type": 6,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632dea-11c8-11ec-b9cc-3a02744196a1",
+      "name": "HRSAP Web Application (HRSAP)",
+      "appId": "346",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "hrsap.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df632e62-11c8-11ec-b9cc-3a02744196a1",
+      "name": "ICRS Cognos Web Application",
+      "appId": "456",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "icrs.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632ee4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Identity Research and Resolution Utility Web App",
+      "appId": "643",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IRRU",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df632f66-11c8-11ec-b9cc-3a02744196a1",
+      "name": "IMESA Information Delivery Web Application (IID)",
+      "appId": "714",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IMESA - IID",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df632fde-11c8-11ec-b9cc-3a02744196a1",
+      "name": "IMESA Query Web Application (IQWA) - MTAC",
+      "appId": "624",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IMESA - IQWA",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df633060-11c8-11ec-b9cc-3a02744196a1",
+      "name": "IMESA Visualization Web Application (IVIZ)",
+      "appId": "622",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IMESA - IVIZ",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df6330f6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Initiate Batch Update Component",
+      "appId": "566",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IBUC",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63318c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Interface Service Manager (ISM)",
+      "appId": "639",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ism",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df633268-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Interoperability Layer Services (IoLS) Batch",
+      "appId": "637",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IMESA - IOLS Batch",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df6332ea-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Interoperability Layer Services (IOLS) Web Service 1.3",
+      "appId": "583",
+      "programId": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IMESA - IOLS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df6312b0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSLE"
+      }
+    },
+    {
+      "guid": "df63336c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "IRS Affordable Care Act Reporting Application",
+      "appId": "690",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IRSACA",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6333ee-11c8-11ec-b9cc-3a02744196a1",
+      "name": "IVR Health Care Coverage Web Application (IVRHCC) Web App",
+      "appId": "457",
+      "programId": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "IVRHCC",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df631daa-11c8-11ec-b9cc-3a02744196a1",
+        "name": "CCC - Customer Contact Center"
+      }
+    },
+    {
+      "guid": "df633470-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Joint Manpower Information System (JMIS) Web Application",
+      "appId": "282",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "JMIS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633506-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Joint Qualification System Self-Nomination (JQS) Web App",
+      "appId": "498",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "jqs.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633588-11c8-11ec-b9cc-3a02744196a1",
+      "name": "JPARR Enterprise (JPARR-E)  (JPARR Enterprise Web Application)",
+      "appId": "479",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "jparr",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df633600-11c8-11ec-b9cc-3a02744196a1",
+      "name": "JPARR Unrestricted Web Application",
+      "appId": "478",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "jparr",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df633678-11c8-11ec-b9cc-3a02744196a1",
+      "name": "JPAS Load to ADW Web App (JLA)",
+      "appId": "613",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "JLA",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df633718-11c8-11ec-b9cc-3a02744196a1",
+      "name": "LTRSOESBAT",
+      "appId": "617",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "LTRSOESBAT",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63379a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MaintainEnrollments PEGA App (Derive Assigned)",
+      "appId": "1138",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HCBnfMaintEnrl.jar",
+      "type": 5,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633844-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MaintainEnrollments PEGA App (Med/Dent)",
+      "appId": "1138",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "HCBnfMaintEnrl.jar",
+      "type": 5,
+      "automated": 2,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6338c6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "maintainPremiumPolicy(mPP) - previously Premium Maintenance Web Application",
+      "appId": "571",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pmwa",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633948-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MAWLBAT",
+      "appId": "637",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "MAWLBAT",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6339ca-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MAWS",
+      "appId": "636",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "MAWS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633a4c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MGIB Ch30/Ch 1606 Extract Program",
+      "appId": "447",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "mgibextr.jar",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633ace-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MIDR Procedures: - MIDR_PDR_DEL- MIDR_PDR_PERSON_MERGE",
+      "appId": "428,437,1547 ",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "MIDR",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633b46-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MilConnect Portal Web Application",
+      "appId": "451",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "milconnect",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633bc8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Military Funeral Honors Web App (MFH)",
+      "appId": "687",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "mfh",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633c40-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Military Mortality Database (MMDB)",
+      "appId": "646",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "mmdb.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633ce0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Military Performance Metrics (MPM) Website",
+      "appId": "391",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Mpm.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633d62-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Military Recruiter Information Suite Web App(MRIS)",
+      "appId": "692",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "mris",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633dda-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MilPay Batch App (ESB)",
+      "appId": "483",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "milpaybat.ear",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633e52-11c8-11ec-b9cc-3a02744196a1",
+      "name": "MLA (Military Lending Act) Web Application",
+      "appId": "646",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "mla.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df633ef2-11c8-11ec-b9cc-3a02744196a1",
+      "name": "NEO Tracking System (NTS)\nNEO Tracking System Web Application\nNoncombatant Evacuation Operation (NEO)  ",
+      "appId": "439",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "nets",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df633f6a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Notifications System Web Application",
+      "appId": "544",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ntfym",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df633fec-11c8-11ec-b9cc-3a02744196a1",
+      "name": "OHI XML-TR Translation Web Server",
+      "appId": "280",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ohiparsr",
+      "type": 2,
+      "automated": 2,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6341d6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "OHI/SIT Reports Web Application",
+      "appId": "342",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ohisitrpt.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63429e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Operator Account Manager",
+      "appId": "410",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "oam.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df634320-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Operator Authentication Service (OAS)",
+      "appId": "559",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "oas.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6343ac-11c8-11ec-b9cc-3a02744196a1",
+      "name": "OpsConnect",
+      "appId": "",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "OpsConnect",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634424-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Oracle (PL/SQL) Web Apps - Public Key Enabling (OWAPKE)",
+      "appId": "314",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Owapke.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6344a6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Patient Add/Update Service (PAUS)",
+      "appId": "672",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "PAUS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df634528-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Patient Discovery Web Service (PDWS)",
+      "appId": "567",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "PDWS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df6345a0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Patient ID Change Notification (PIDS Update Service)",
+      "appId": "162",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pidsup",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df634618-11c8-11ec-b9cc-3a02744196a1",
+      "name": "PCM Geocode Batch Web Application",
+      "appId": "616",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "geocodebatch.ear",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6346b8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Person Finder Web Service (PFWS)",
+      "appId": "551",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pfws",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df63474e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Personnel Accountability  Reporting System Web Application (PARS) ",
+      "appId": "423",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Pars",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df6347d0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Personnel Location Web Service",
+      "appId": "860",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "PLWS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df634848-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Personnel/Finance Transfer Batch Driver",
+      "appId": "578",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pft",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6348ca-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Policy Decision Point Web Service Application (PDP)",
+      "appId": "472",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pdp",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df634942-11c8-11ec-b9cc-3a02744196a1",
+      "name": "POLICYRPT Cognos Project Folder - Medical Enrollment Report Web --  Client side",
+      "appId": "225",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "POLICYRPT.zip",
+      "type": 7,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6349c4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "POLICYRPT Cognos Project Folder - Premium reports:",
+      "appId": "225",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "POLICYRPT.zip",
+      "type": 7,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634a46-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Benefits Correspondence Web App (eCorr Portlet)",
+      "appId": "889",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-benefits-corr.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634bcc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Benefits Correspondence Web App (GIQD -ACA Portlet) ",
+      "appId": "889",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-benefits-corr.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634c58-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Claims Web App (CCD Portlet)",
+      "appId": "891",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-claims.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634cf8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Clinical Web App- (GIQD - Immunizations Portlet)",
+      "appId": "896",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-clinical.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634da2-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Education Benefits Web App (TEB Portlet)",
+      "appId": "893",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-edu-benefits.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634e24-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Health Care Coverage Web App  (milConnect Portlets: Proof of Coverage and Medica/Dental/Pharmacy)",
+      "appId": "894",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-healthcc.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634e9c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Health Care Coverage Web App (GIQD OpsConnect Portlet)",
+      "appId": "894",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-healthcc.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634f32-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Life Insurance Web App (SOES Portlet)",
+      "appId": "892",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SOES Portlet",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df634fb4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Other Healthcare Web App (OHI MilConnect Portlet)",
+      "appId": "897",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-other-healthcare.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635036-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Other Healthcare Web App (OHI Web App OpsConnect Portlet)",
+      "appId": "281, \n66",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ohiweb",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6350ae-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet PCM Web App (PCMRA) ",
+      "appId": "354",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pcmra",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635144-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet PCM Web App (PCMRSCH)",
+      "appId": "255",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pcmrsch",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6351bc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Association Web App (Incap Portlet)",
+      "appId": "890",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "portlet-person-asc.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63523e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Web App  (MyProfile Portlet)",
+      "appId": "899",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Module",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6352b6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Web App (Address Update OpsConnect Portlet)",
+      "appId": "215",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "address.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63534c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Web App (DPRIS Portlet)",
+      "appId": "899",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dwcportletapp",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6353ce-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Web App (DWC Portlet)",
+      "appId": "899",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dwcportletapp",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df635446-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Portlet Person Web App (FSSA Portlet)",
+      "appId": "899",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "fssaportletapp",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Antonio Bartkowski",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6354c8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Premium Billing Service Web Application\n(PBS)",
+      "appId": "586",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pbs",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63554a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "PRTT Web Application",
+      "appId": "321",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "prtt",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6355e0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "RAPIDS",
+      "appId": "7",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "rapids-client-comp",
+      "type": 4,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df635658-11c8-11ec-b9cc-3a02744196a1",
+      "name": "RAPIDS Self Service (RSS)",
+      "appId": "554",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "RSS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df6356d0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Real Time Broker Service (RBS) / CL_RBS",
+      "appId": "387",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "rbs",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df63577a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "reassignPrimaryCareManagerProcessor in sharedlib.CUF-enrollment-processors Formerly: PCM Reassignment Server Application",
+      "appId": "433",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "pcmras",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6357fc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Regional Proficiency Assessment Tool Web App",
+      "appId": "648",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "RPAT",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df635874-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Reserve Retirement Repository Web App (RRR)",
+      "appId": "473",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "rrr",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df635928-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Retired Address Finder (RAF) ",
+      "appId": "502",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "RAF",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6359aa-11c8-11ec-b9cc-3a02744196a1",
+      "name": "RPAT Operator Web App",
+      "appId": "670",
+      "programId": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "rpato.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df6314f4-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PA - Personnel Accountability"
+      }
+    },
+    {
+      "guid": "df635a40-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Run Audit Web Application",
+      "appId": "566",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df635ac2-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Secure Web Fingerprint Transmission",
+      "appId": "N/A",
+      "programId": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SWFT",
+      "type": 8,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Tamekia Lachance",
+      "program": {
+        "guid": "df63140e-11c8-11ec-b9cc-3a02744196a1",
+        "name": "PSA"
+      }
+    },
+    {
+      "guid": "df635b3a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Security Online",
+      "appId": "205",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "audit.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df635bbc-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Self Defined Population (SDP)",
+      "appId": "473",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "sdp",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df635c3e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Self Service Access Station Web Application (DS Access Station)",
+      "appId": "492",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dsaccessstation.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df635cd4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Self Service Identity Management Web App (DS Logon)",
+      "appId": "603",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "identitymanagement.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df635d60-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SendBeneficiaryCorrespondenceBIO- CUF functional processor for beneficiary notification correspondence FORMERLY: Beneficiary Notification Web Application",
+      "appId": "570",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "bene",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635df6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SendCertificateOfCreditableCoverageCorrespondenceBIO- CUF functional processor for certificate of credible coverage correspondence FORMERLY: Certificate of Creditable Coverage (COCC) Letter Server",
+      "appId": "254",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Das-ltrcocc",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635e82-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SendDisenrollmentCorrespondenceBIO - CUF functional processor for disenrollment correspondence FORMERLY: Disenrollment Letters Server (JAVA)",
+      "appId": "252",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "das-ltrdenrl",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635f04-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SendEnrollmentCardCorrespondenceBIO - CUF functional processor for enrollment correspondence FORMERLY: Enrollment Card Application (Ecrd)",
+      "appId": "1127",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ECRD Srvr App",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df635f90-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SendPrimaryCareManagerCorrespondenceBIO - CUF functional processor for primary care manager correspondence FORMERLY: PCM Transfer/Reassignment Letters Server  (JAVA)",
+      "appId": "253",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ltrpcm.jar",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636008-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Separation Data Correction Via DD215 Web App",
+      "appId": "523",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dd215",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Micheal Rinker",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df636080-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Separation Pay - VA Pay",
+      "appId": "641",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "seppaybat.ear",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636102-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Service Members Civil Relief Act Web Application (SCRA)\n",
+      "appId": "463",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SCRA",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df636198-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SGLINS",
+      "appId": "634",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SGLINS",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636210-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SIMS Configuration Interface (SCI)",
+      "appId": "664",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SCI",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df6362b0-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SIT Server (Standard Insurance Table Web Server App)",
+      "appId": "262",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636332-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Site ID Management Service (SIMS) - database",
+      "appId": "664",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SIMS",
+      "type": 5,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df6363c8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SOES Operator Web Application",
+      "appId": "584",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SOES Admin",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636454-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SSAEVS Batch-Client Application (J2EE)",
+      "appId": "511",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ssaevsbat",
+      "type": 6,
+      "automated": 0,
+      "productOwner": "Mellie Strey",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6364d6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SSN Change Batch Application",
+      "appId": "491",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "ssnch",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df63654e-11c8-11ec-b9cc-3a02744196a1",
+      "name": "SSR",
+      "appId": "890",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "SSR",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df6365c6-11c8-11ec-b9cc-3a02744196a1",
+      "name": "TAP - DoDTAP Public Web Application",
+      "appId": "650",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "dodtap.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Alia Penrod",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df636652-11c8-11ec-b9cc-3a02744196a1",
+      "name": "TAP - TACL Operator Web Application",
+      "appId": "618",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "tacl.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6366d4-11c8-11ec-b9cc-3a02744196a1",
+      "name": "TAP - TAP Web Service",
+      "appId": "421",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "psccws.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df63674c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "TAP - TGPS Beneficiary Web Application",
+      "appId": "629",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "TGPS",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Lang Hanger",
+      "projectManager": "Deb Desanti",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df6367ce-11c8-11ec-b9cc-3a02744196a1",
+      "name": "TAP Data Retrieval Web Service (TDRWS) ",
+      "appId": "644",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "TDRWS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Danita Caudle",
+      "projectManager": "Emery Said",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df636846-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Test Patient Management Tool",
+      "appId": "697",
+      "programId": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "TPMT",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Vannessa Schmitmeyer",
+      "program": {
+        "guid": "df62fbcc-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Entitlements & Benefits (EHRM)"
+      }
+    },
+    {
+      "guid": "df6368be-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Tokenizer Web Application (Tokenup)",
+      "appId": "591",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "tokenup",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df636940-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Transaction Audit Web Service (TAWS)",
+      "appId": "564",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "taws",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df6369b8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Transfer of Education Benefits BBS Utility",
+      "appId": "709",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "teb_bu.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Kenisha Brasier",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636a58-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Trusted Associate Sponsorship System (TASS) Web Application",
+      "appId": "236",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "TASS",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Vannessa Schmitmeyer",
+      "projectManager": "Mellie Strey",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df636af8-11c8-11ec-b9cc-3a02744196a1",
+      "name": "UIC Address Loader C Program",
+      "appId": "292",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "uicadrs",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636b98-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Unit Identification Code Search System (UICSS)",
+      "appId": "422",
+      "programId": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Uicss.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Kenisha Brasier",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df6311c0-11c8-11ec-b9cc-3a02744196a1",
+        "name": "DD&DS - Data Delivery & Decision Support"
+      }
+    },
+    {
+      "guid": "df636c1a-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Upload Download System Web App (UDS)",
+      "appId": "430",
+      "programId": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "UDS.ear",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Eloy Bosque",
+      "program": {
+        "guid": "df62f85c-11c8-11ec-b9cc-3a02744196a1",
+        "name": "EDS - Enterprise Data Services"
+      }
+    },
+    {
+      "guid": "df636c92-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Verifying Officials Information System Web App(VOIS)",
+      "appId": "455",
+      "programId": "df630108-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "Vois.ear",
+      "type": 1,
+      "automated": 2,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Jordan Smart",
+      "program": {
+        "guid": "df630108-11c8-11ec-b9cc-3a02744196a1",
+        "name": "Cred - Credentialing"
+      }
+    },
+    {
+      "guid": "df636d14-11c8-11ec-b9cc-3a02744196a1",
+      "name": "Veteran Exchange Tool (VET)",
+      "appId": "739,740 ",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "VET",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Emery Said",
+      "projectManager": "Lang Hanger",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636d8c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "VPOC SIT Web Application",
+      "appId": "278",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Jordan Smart",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636e04-11c8-11ec-b9cc-3a02744196a1",
+      "name": "WebDOES",
+      "appId": "420",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "WebDOES",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Antonio Bartkowski",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636e86-11c8-11ec-b9cc-3a02744196a1",
+      "name": "WII LOD Reports",
+      "appId": "675",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "WII LOD Reports",
+      "type": 2,
+      "automated": 0,
+      "productOwner": "Deb Desanti",
+      "projectManager": "Micheal Rinker",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636f6c-11c8-11ec-b9cc-3a02744196a1",
+      "name": "WII LOD Web Service",
+      "appId": "552",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "WII LOD Web Service",
+      "type": 1,
+      "automated": 0,
+      "productOwner": "Tamekia Lachance",
+      "projectManager": "Alia Penrod",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    },
+    {
+      "guid": "df636fee-11c8-11ec-b9cc-3a02744196a1",
+      "name": "X12 Web Application",
+      "appId": "357",
+      "programId": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+      "artifact": "X12",
+      "type": 6,
+      "automated": 0,
+      "productOwner": "Eloy Bosque",
+      "projectManager": "Danita Caudle",
+      "program": {
+        "guid": "df62f550-11c8-11ec-b9cc-3a02744196a1",
+        "name": "E&B - Entitlements & Benefits"
+      }
+    }
+  ]

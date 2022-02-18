@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(243, 249, 250) !important;
+    padding-bottom: 50px;
+}
+a {
+    text-decoration: none !important;
+}
+a:visited {
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-check .form-check-input[type=checkbox] {
+    border-radius: .25em;
+    height: 25px;
+    width: 25px;
+}
+.form-check .form-check-input[type=radio] {
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+}
+.form-switch .form-check-input[type=checkbox] {
+    border-radius: 2em;
+    height: 20px;
+    width: 20px;
+}
+
+.form-check label {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.input-group-prepend {
+    min-width: 190px;
+    span {
+        width: 100%;
+    }
+}
+
+.push-right, .pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+    float: none;
+}
+
+.table-header-create {
+    margin-right: -12px;
+}
+
+.blue {
+    color: #0000bb;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.ml-1 {
+    margin-left: 3px;
+}
+
+.ml-2 {
+    margin-left: 6px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mr-1 {
+    margin-right: 3px;
+}
+
+.mb-1 {
+    margin-bottom: 3px;
+}
+
+.mb-2 {
+    margin-bottom: 6px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.white {
+    color: white !important;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    margin-bottom: 3px;
+}
+
+button.close {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    font-size: 1.5rem;
+}
+
+.smaller {
+    font-size: 1.0rem;
+}
+
+div.error {
+    color: rgba( 244, 44, 23);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.cst-btn-xs {
+    padding: 0.15rem 0.35rem !important;
+    font-size: .675rem !important;
+    border-radius: 0.2rem !important;
+}
+
+.modal-header {
+    padding: .7rem .7rem !important;
+}
+
+.modal-header h4 {
+    font-size: 1.2rem !important;
+}
+
+.form-check-small .form-check-input[type=checkbox] {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.form-check-small label {
+    margin-top: 0px;
+    margin-left: 0px;
+}

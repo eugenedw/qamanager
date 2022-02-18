@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-10">
+        <div *ngFor="let _table of tables" id="table_group_{{_table.table_id}}">
+            <app-data-table [table]="_table" [ngClass]="'table-indent-'+_table.table_indent"></app-data-table>
+            <div [ngClass]="'table-indent-'+_table.table_indent" class="table-buttons">
+                <button class="btn cst-btn-xs btn-primary mr-1" [routerLink]="['/test-case/new:'+applicationId]">Add Test Case</button>
+                <button class="btn cst-btn-xs btn-info">Add Subgroup</button>
+            </div>
+            <div class="mb-30"></div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div style="position: fixed">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Test Case Groups</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:testcasegroups,prefix:'',exclude:''}"></ng-container>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<ng-template #groupoptions let-groups="groups" let-prefix="prefix" let-exclude="exclude">
+    <ng-container *ngFor="let group of groups">
+        <tr>
+            <td><a (click)="groupscroll('table_group_'+group.guid)" class="pointer">{{prefix}}{{group.name}}</a></td>
+        </tr>
+        <ng-container *ngIf="group.children">
+            <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:group.children,prefix:prefix+' - '}"></ng-container>
+        </ng-container>
+    </ng-container>
+</ng-template>

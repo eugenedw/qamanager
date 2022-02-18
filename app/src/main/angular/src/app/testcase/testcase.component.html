@@ -1,0 +1,118 @@
+<div class="container" *ngIf="currentTestCase">
+    <div class="testcase-edit-container">
+        <h2><span *ngIf="currentTestCase.guid===undefined">Create a</span>
+            <span *ngIf="currentTestCase.guid!==undefined">Edit</span> Test Case <span class="blue">[{{currentTestCase.name}}]</span></h2>
+        <div class="row">
+            <div class="col-2">
+              <div class="form-group">
+                <label for="first_name">Test Case ID</label>
+                <input type="text" class="form-control" name="app_id" readonly placeholder="TC-XX" value="TC-{{currentTestCase.testCaseId}}">
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+                <label for="first_name">Name</label>
+                <input type="text" class="form-control" name="app_name" placeholder="eg. Verify Field Value" [(ngModel)]="currentTestCase.name">
+              </div>
+            </div>
+        </div>
+        <div class="alert alert-primary">
+            <div class="row">
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Requirement(s)</label>
+                    <input type="text" class="form-control" name="app_id" placeholder="BR 3.1.2" [(ngModel)]="currentTestCase.businessRequirement">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Automation</label>
+                    <select class="form-control" [(ngModel)]="currentTestCase.automated">
+                        <option value="0">Manual (Not Automated)</option>
+                        <option value="1">Partial</option>
+                        <option value="2">Automated</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Priority</label>
+                    <select class="form-control" [(ngModel)]="currentTestCase.testCasePriority">
+                        <option value="TRIVIAL">Trivial</option>
+                        <option value="MINOR">Minor</option>
+                        <option value="MAJOR">Major</option>
+                        <option value="CRITICAL">Critical</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Test Case Type</label>
+                    <select class="form-control" [(ngModel)]="currentTestCase.testCaseType">
+                        <option value="">Select a type...</option>
+                        <option value="REGRESSION">Regression</option>
+                        <option value="UI">UI</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Estimate (minutes=m, hours=h, or days=d)</label>
+                    <input (keypress)="_estimateKeyRestrict($event)" type="text" class="form-control" name="ttc_ype" placeholder="Estimate (eg. 12h, 10m, 2d)" [(ngModel)]="currentTestCase.timeToComplete">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="first_name">Group</label>
+                    <select class="form-select" name="edit-group-select" [(ngModel)]="currentTestCase.groupId">
+                        <option value="">Select a group...</option>
+                        <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:testcasegroups,prefix:'',exclude:''}"></ng-container>
+                    </select>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="first_name">Pre-Conditions</label>
+                <textarea class="form-control" rows="7" name="app_id" placeholder="Ensure system is operational..." [(ngModel)]="currentTestCase.preconditions"></textarea>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="first_name">Steps</label>
+                <textarea class="form-control" rows="7" name="app_id" placeholder="1. Login to system&#13;&#10;2. Enter the first and last name" [(ngModel)]="currentTestCase.steps"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="first_name">Expected Results</label>
+                <textarea class="form-control" rows="7" name="app_id" placeholder="Screen should display names of..." [(ngModel)]="currentTestCase.expectedResults"></textarea>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <button class="btn btn-primary pull-left" type="button" (click)="back()">Back</button>
+            </div>
+            <div class="col-6">
+                <app-save-button (saveaction)="saveTestCase()" (deleteaction)="deleteTestCase(false)" [savestate]="saving" [indicator]="'ring'"></app-save-button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-modal-confirm #modalConfirm [config]="deleteConfirmModalConfig" (continueaction)="deleteTestCase(true)" (dismissaction)="cancelDelete()"></app-modal-confirm>
+
+<ng-template #groupoptions let-groups="groups" let-prefix="prefix" let-exclude="exclude">
+    <ng-container *ngFor="let group of groups">
+        <option [value]="group.guid" [disabled]="group.guid==exclude">{{prefix}}{{group.name}}</option>
+        <ng-container *ngIf="group.children">
+            <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:group.children,prefix:prefix+' - '}"></ng-container>
+        </ng-container>
+    </ng-container>
+</ng-template>
