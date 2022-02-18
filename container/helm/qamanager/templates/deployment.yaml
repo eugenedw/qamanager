@@ -13,8 +13,15 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRES_PASSWORD
+              value: {{ .Values.service.postgres.password }}
+            - name: POSTGRES_HOST
+              value: {{ .Values.service.postgres.host }}
         - name: qamanager-{{ .Values.service.instance.id }}
-          image: 882757728917.dkr.ecr.us-west-2.amazonaws.com/qamanager:{{ .Values.image.tag }}
+          image: 882757728917.dkr.ecr.us-west-2.amazonaws.com/qamanager:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8081
+  imagePullSecrets:
+  - name: regcred

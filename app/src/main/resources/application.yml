@@ -26,7 +26,7 @@ spring:
 spring:
   profiles: dev
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/qamanager'
+    url: 'jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/qamanager'
     #username: qamanager
     #password: qa_manag3r1
     username: postgres
@@ -37,6 +37,6 @@ spring:
 spring:
   profiles: prod
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/qamanager'
+    url: 'jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/qamanager'
     username: qamanager
     password: qa_manag3r1
