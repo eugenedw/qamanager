@@ -29,7 +29,7 @@ public class BusinessProgram {
             name = "uuid",
             strategy = "org.hibernate.id.UUIDGenerator"
     )
-    @Column(name="uuid", updatable = false, nullable = false)
+    @Column(name="guid", updatable = false, nullable = false)
     private UUID guid;
 
     @Column(name="name")

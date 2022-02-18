@@ -9,8 +9,8 @@ export class ApplicationService {
 
     public applicationList : Array<Application>;
 
-    appDataUrl = "/assets/data/applications.json";
-    //appDataUrl = "/api/application"
+    //appDataUrl = "/assets/data/applications.json";
+    appDataUrl = "/api/application"
 
     public constructor(public http:HttpClient){
         this.applicationList = [];
@@ -18,7 +18,7 @@ export class ApplicationService {
 
     public getApplicationList(){
         try{
-            return this.http.get<any>(this.appDataUrl).toPromise()
+            return this.http.get<any>(this.appDataUrl.concat("/list")).toPromise()
         }
         catch(e){
             alert(e)

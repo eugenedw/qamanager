@@ -4,6 +4,8 @@ import com.grplife.qamanager.model.Application;
 import com.grplife.qamanager.model.BusinessProgram;
 import com.grplife.qamanager.repository.BusinessProgramRepository;
 import com.grplife.qamanager.service.BusinessProgramService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +27,8 @@ import java.util.*;
 @RestController
 @RequestMapping("/api/program")
 public class BusinessProgramController {
+
+    private static Logger logger = LogManager.getLogger(BusinessProgramController.class);
 
     @Autowired
     private BusinessProgramRepository businessProgramRepository;
@@ -72,6 +76,7 @@ public class BusinessProgramController {
             return new ResponseEntity<>(_program,HttpStatus.CREATED);
         }
         catch(Exception e){
+            logger.error("Could not save the business program",e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

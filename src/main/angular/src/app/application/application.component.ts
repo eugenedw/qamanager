@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Person } from 'src/shared/model/person';
+import { Milestone } from 'src/shared/model/milestone';
+import { PersonService } from 'src/shared/service/person/person.service';
+import { MilestoneService } from 'src/shared/service/milestone/milestone.service';
 import { Application } from '../../shared/model/application';
 import { ProgramArea } from '../../shared/model/program.area';
 import { ReleaseRRF } from '../../shared/model/releaserrf';
@@ -17,11 +21,15 @@ export class ApplicationComponent implements OnInit {
   public currentApplication!:Application;
   public programlist!:Array<ProgramArea>;
   public releases!:Array<ReleaseRRF>;
+  public milestones!:Array<Milestone>;
+  public team!:Array<Person>;
 
   public current_tab:string = 'app-tab-general';
 
   constructor(public route:ActivatedRoute, public appsvc:ApplicationService, 
-              public programsvc:ProgramService, public rrfsvc:RRFService, public router:Router) { 
+              public programsvc:ProgramService, public rrfsvc:RRFService, public milestoneService:MilestoneService,
+              public personsvc:PersonService, 
+              public router:Router) { 
   }
 
   ngOnInit() {
@@ -32,7 +40,22 @@ export class ApplicationComponent implements OnInit {
         //resp.find(app => app.guid === id);
         this.rrfsvc.getByApp(this.currentApplication.guid).then((resp:any)=>{
           //resp : Array<ReleaseRRF>
+          if( resp == null ){
+            resp = [];
+          }
           this.releases = resp;
+        });
+        this.milestoneService.getByAppId(id).then((resp:any)=>{
+          if( resp == null ){
+            resp = [];
+          }
+          this.milestones = resp;
+        });
+        this.personsvc.getByApplication(id).then((resp:any)=>{
+          if( resp == null ){
+            resp = [];
+          }
+          this.team = resp;
         });
       });
     }

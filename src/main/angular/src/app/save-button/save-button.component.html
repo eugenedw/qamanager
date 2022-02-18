@@ -1,0 +1,5 @@
+<div class="save-wrapper">
+    <div [ngClass]="'lds-'+indicator" [hidden]="!savestate"><div></div><div></div><div></div><div></div></div>
+    <button type="button" class="btn btn-success push-right" (click)="save()">Save</button>
+    <button type="button" class="delete-button btn btn-danger push-right" (click)="delete()">Delete</button>
+</div>

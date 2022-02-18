@@ -1,6 +1,6 @@
 # qamanager
 A Quality Assurance Management tool for tracking of key tasks, resources, and schedules
-Spring Boot and Angular 12
+Spring Boot and Angular 13
 
 ## Environment Variables ##
 These are some environment variables used at runtime

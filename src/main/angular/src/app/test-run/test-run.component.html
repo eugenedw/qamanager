@@ -1,0 +1,139 @@
+<div class="container" *ngIf="currentTestRun">
+    <div class="testcase-edit-container">
+        <h2><span *ngIf="currentTestRun.guid===undefined">Create a</span>
+            <span *ngIf="currentTestRun.guid!==undefined">Edit</span> Test Run <span class="blue">[{{currentTestRun.name}}]</span></h2>
+        <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="first_name">Name</label>
+                <input type="text" class="form-control" name="app_name" placeholder="eg. Execute Test Cases" [(ngModel)]="currentTestRun.name">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="first_name">Description</label>
+                <textarea class="form-control" rows="12" placeholder="Executes the series of tests required for full regression" [(ngModel)]="currentTestRun.description"></textarea>
+              </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-6 pb-3">
+            <div class="pt-1">
+              <span>Test Cases</span>
+            </div>
+            <div class="mt-1">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="test_case_all" [value]="'ALL'" [(ngModel)]="currentTestRun.testCaseSelect">
+                <label class="form-check-label" for="test_case_all">Execute All Test Cases</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="test_case_selected" [value]="'SELECTED'" [(ngModel)]="currentTestRun.testCaseSelect">
+                <label class="form-check-label" for="test_case_selected">Execute Selected Test Cases</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 pb-3">
+            <div class="pt-1">
+              <span>Execution Method</span>
+            </div>
+            <div class="mt-1">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="test_case_all" [value]="'MANUAL'" [(ngModel)]="currentTestRun.executionMethod">
+                <label class="form-check-label" for="test_case_all">Manual</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="test_case_selected" [value]="'AUTOMATED'" [(ngModel)]="currentTestRun.executionMethod">
+                <label class="form-check-label" for="test_case_selected">Automated</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6" [hidden]="currentTestRun.testCaseSelect != 'SELECTED'">
+              <div class="mt-3 alert alert-light">
+                  {{getSelectedTestCases().length}} test cases selected <a (click)="selectTestCases(caseSelectModal)" class="btn cst-btn-xs btn-warning ml-2">Select Test Cases</a>
+              </div>
+          </div>
+          <div class="col-6" [hidden]="currentTestRun.executionMethod != 'AUTOMATED'">
+              <div class="mt-3 alert alert-light">
+                  Execution Webhook: 
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <button class="btn btn-primary pull-left" type="button" (click)="back()">Back</button>
+            </div>
+            <div class="col-6">
+                <app-save-button (saveaction)="saveTestRun()" (deleteaction)="deleteTestRun(false)" [savestate]="saving" [indicator]="'ring'"></app-save-button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-modal-confirm #modalConfirm [config]="deleteConfirmModalConfig" (continueaction)="deleteTestRun(true)" (dismissaction)="cancelDelete()"></app-modal-confirm>
+
+<ng-template #caseSelectModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Select Test Cases</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-4">
+                <div class="group-table-wrapper">
+                    <table class="table-striped group-table">
+                        <tr>
+                            <td>  
+                              <div class="form-check form-check-inline form-check-small">
+                                <input class="form-check-input custom-control-input" [(ngModel)]="testGroupSelect['uncategorized']" (change)="showGroupCases('uncategorized')" type="checkbox" name="group_chk_uncategorized" value="true">
+                                <label class="custom-control-label" for="group_chk_uncategorized" (click)="showGroupCases('uncategorized')" class="pointer">Uncategorized</label>
+                              </div>
+                            </td>
+                        </tr>
+                        <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:testcasegroups,prefix:'',exclude:''}"></ng-container>
+                    </table> 
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="test-case-result-list">
+                    <div class="test-case-result-list-header" *ngIf="selectedGroup">
+                        {{testCaseGroupMap[selectedGroup].name}}
+                    </div>
+                    <div class="test-case-select-body" *ngIf="selectedGroup">
+                        <div class="test-case-option" *ngFor="let tc of testCaseGroupMap[selectedGroup].test_cases">
+                            <div class="select-case">
+                                <div class="form-check form-check-inline form-check-small">
+                                  <input class="form-check-input custom-control-input" (change)="addTestCase(tc.guid)" [(ngModel)]="testCaseSelect[tc.guid]" type="checkbox" name="tc_chk_{{tc.guid}}" value="true">
+                                </div>
+                                <div class="case-name">
+                                    {{tc.name}}
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.dismiss()">Done</button>
+    </div>
+</ng-template>
+
+<ng-template #groupoptions let-groups="groups" let-prefix="prefix" let-exclude="exclude">
+    <ng-container *ngFor="let group of groups">
+        <tr>
+            <td>  
+              <div class="form-check form-check-inline form-check-small">
+                <input class="form-check-input custom-control-input" [(ngModel)]="testGroupSelect[group.guid]" (change)="showGroupCases(group.guid)" type="checkbox" name="group_chk_{{group.guid}}" value="true">
+                <label class="custom-control-label" for="group_chk_{{group.guid}}" (click)="showGroupCases(group.guid)" class="pointer">{{prefix}}{{group.name}}</label>
+              </div>
+            </td>
+        </tr>
+        <ng-container *ngIf="group.children">
+            <ng-container [ngTemplateOutlet]="groupoptions" [ngTemplateOutletContext]="{groups:group.children,prefix:prefix+' - '}"></ng-container>
+        </ng-container>
+    </ng-container>
+</ng-template>

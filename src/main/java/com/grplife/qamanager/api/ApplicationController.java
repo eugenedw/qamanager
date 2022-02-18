@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.util.*;
 
@@ -23,6 +25,8 @@ import java.util.*;
 @RestController
 @RequestMapping("/api/application")
 public class ApplicationController {
+
+    private static Logger logger = LogManager.getLogger(ApplicationController.class);
 
     @Autowired
     private ApplicationRepository applicationRepository;
@@ -72,6 +76,7 @@ public class ApplicationController {
             return new ResponseEntity<>(_application, HttpStatus.CREATED);
         }
         catch (Exception e){
+            logger.error("There was a problem saving the application",e);
             return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

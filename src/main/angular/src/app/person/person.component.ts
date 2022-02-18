@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from '../../shared/model/person';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UtilityService } from '../../shared/service/util.service';
 import { PersonService } from '../../shared/service/person/person.service';
 import { Application } from '../../shared/model/application';
@@ -15,7 +15,7 @@ export class PersonComponent implements OnInit {
 
   public currentPerson !: Person;
 
-  constructor(public route:ActivatedRoute, public util:UtilityService, 
+  constructor(public route:ActivatedRoute, public util:UtilityService, public router:Router,
               public personsvc:PersonService, public appsvc:ApplicationService) { }
  
   public personlist : Array<Person> = [];
@@ -76,7 +76,6 @@ export class PersonComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('personid');
     if( id == 'new' ){
       this.currentPerson = new Person("","","");
-      this.currentPerson.guid = UtilityService.uuid();
     }
     else if( id != null ){
       this.personsvc.get(id).then((resp:any)=> {
@@ -94,6 +93,15 @@ export class PersonComponent implements OnInit {
       this.currentPerson.applications = [];
     }
     this.currentPerson.applications.push("");
+  }
+
+  save(){
+    this.personsvc.savePerson(this.currentPerson).subscribe((resp:Person)=>{
+        if( resp != null && resp.guid !== undefined ){
+          this.currentPerson = resp;
+          this.router.navigateByUrl("/person/view/".concat(resp.guid))
+        }
+    });
   }
 
   removeapplication(appid:any){

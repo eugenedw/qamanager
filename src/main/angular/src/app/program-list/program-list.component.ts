@@ -25,6 +25,9 @@ export class ProgramListComponent implements OnInit {
 
   loadprograms(){
     this.programsvc.getPrograms().then((resp:Array<ProgramArea>)=>{
+      if( resp == null ){
+        resp = [];
+      }
       this.programs = resp;
     });
   }

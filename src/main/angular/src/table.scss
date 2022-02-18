@@ -1,0 +1,152 @@
+
+app-data-table {
+    div.table-wrap {
+        margin-bottom: 5px;
+    }
+}
+
+table caption {
+    min-width: 240px;
+    font-weight: bold;
+    background-color: #bbe0e6;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: .85rem;
+}
+
+.table {
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.table thead tr {
+    background-color: #e4f2f4;
+}
+
+.table-indent-1.table-buttons {
+    padding-left: 40px;
+}
+
+.table-indent-2.table-buttons  {
+    padding-left: 60px;
+}
+
+.table-indent-3.table-buttons {
+    padding-left: 80px;
+}
+
+.table-indent-4.table-buttons {
+    padding-left: 100px;
+}
+
+.table-indent-5.table-buttons {
+    padding-left: 120px;
+}
+
+.table-indent-6.table-buttons {
+    padding-left: 140px;
+}
+
+.table-indent-7.table-buttons {
+    padding-left: 180px;
+}
+
+.table-indent-8.table-buttons {
+    padding-left: 200px;
+}
+
+.table-indent-1 div.table-wrap {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-2 div.table-wrap  {
+    margin-left: 40px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-3 div.table-wrap  {
+    margin-left: 60px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-4 div.table-wrap  {
+    margin-left: 80px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-5 div.table-wrap  {
+    margin-left: 100px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-6 div.table-wrap  {
+    margin-left: 120px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-7 div.table-wrap  {
+    margin-left: 140px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table-indent-8 div.table-wrap  {
+    margin-left: 160px;
+    padding-left: 20px;
+    border-left: dotted 1px #dedede;
+}
+
+.table>:not(:first-child) {
+    border-top: 1px dotted #849344;
+}
+.table tr {
+    background-color: #fff;
+}
+
+table { 
+    border: 0px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 7px;
+    border-spacing: 0px;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th, td {
+    padding: 5px 4px 6px 4px; 
+    text-align: left;
+    vertical-align: top;
+    border-left: 0px solid #ddd;
+    font-size: .9rem;
+}
+td {
+    border-top: 0px solid #ddd;    
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 7px 0 0 0;
+}
+thead:first-child tr:first-child th:last-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 7px 0 0px;
+}
+
+.dotted-link {
+    text-decoration: dotted 1px underline;
+}

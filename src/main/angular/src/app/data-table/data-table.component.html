@@ -1,0 +1,24 @@
+<div class="table-wrap">
+  <table class="table table-responsive">
+    <thead>
+      <caption *ngIf="table.title">{{table.title}}</caption>
+      <tr>
+        <th scope="col" class="border-top-0" *ngFor="let hdr of table.header" [ngClass]="hdr.width">{{hdr.label}}</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="table.rows === undefined || table.rows.length == 0">
+      <td [attr.colspan]="table.header.length">
+       {{table.emptyMessage}}
+      </td>
+    </tr>
+    <tr *ngFor="let data of table.rows">
+      <td *ngFor="let col of data.columns">
+          <a *ngIf="data.link" [routerLink]="[data.link]" [queryParams]="data.params">{{col.body}}</a>
+          <span *ngIf="data.link === undefined && col.edit === undefined">{{col.body}}</span>
+          <a *ngIf="col.edit" class="btn btn-info push-right" [routerLink]="[data.link]" [queryParams]="data.params">Edit</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

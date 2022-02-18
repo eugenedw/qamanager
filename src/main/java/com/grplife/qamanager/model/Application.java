@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -27,7 +28,7 @@ public class Application {
             name = "uuid",
             strategy = "org.hibernate.id.UUIDGenerator"
     )
-    @Column(name="uuid", updatable = false, nullable = false)
+    @Column(name="guid", updatable = false, nullable = false)
     private UUID guid;
 
     @Column(name="dt_created")
@@ -60,6 +61,11 @@ public class Application {
 
     @Column(name="comments")
     private String comments;
+
+    @ManyToMany
+    @JoinTable(name="psn_app_xref", joinColumns = @JoinColumn(name="app_id")
+                                  , inverseJoinColumns = @JoinColumn(name="person_id"))
+    public Set<Person> people;
 
     @Transient
     private BusinessProgram program;
@@ -158,6 +164,14 @@ public class Application {
 
     public void setProgram(BusinessProgram program) {
         this.program = program;
+    }
+
+    public Set<Person> getPeople() {
+        return people;
+    }
+
+    public void setPeople(Set<Person> people) {
+        this.people = people;
     }
 
     @Override

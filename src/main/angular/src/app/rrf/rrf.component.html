@@ -15,14 +15,14 @@
   <div class="rrf-edit-container" *ngIf="rrfstatus != 'find'">
     <div class="rrf-header">
       <div class="row">
-        <div class="col-9">
+        <div class="col-10">
           <h2><span *ngIf="currentRRF.status==0">Create an</span>
               <span *ngIf="currentRRF.status!=0">Edit</span> RRF</h2>
         </div>
-        <div class="col-3 pt-1">
+        <div class="col-2 pt-1">
           <div class="alert alert-dark pr-0" [hidden]="currentRRF.status == 0">
             <div class="form-check form-check-inline push-right">
-              <label class="form-check-label mr-3" for="release_at_risk">This Release is At Risk</label>
+              <label class="form-check-label mr-3" for="release_at_risk">Release at Risk</label>
               <input class="form-check-input push-right" type="checkbox" name="release_at_risk" value="1" [(ngModel)]="currentRRF.at_risk" (click)="setrisk()">
             </div>
             <div class="clear"></div>

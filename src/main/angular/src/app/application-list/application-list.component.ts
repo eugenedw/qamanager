@@ -34,6 +34,9 @@ export class ApplicationListComponent implements OnInit {
 
   ngOnInit() {
     this.appsvc.getApplicationList()!.then((resp:Array<Application>)=>{
+      if( resp == null ){
+        resp = [];
+      }
       this.applications = resp;
     });
     this.programsvc.getPrograms().then((resp:Array<ProgramArea>)=>{

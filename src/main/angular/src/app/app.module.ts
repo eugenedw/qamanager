@@ -17,6 +17,16 @@ import { ProgramListComponent } from './program-list/program-list.component';
 import { RRFComponent } from './rrf/rrf.component';
 import { RRFListComponent } from './rrflist/rrflist.component';
 import { TeamlistComponent } from './teamlist/teamlist.component';
+import { BackButtonDirective } from 'src/shared/directive/back-button';
+import { MilestoneListComponent } from './milestone-list/milestone-list.component';
+import { MilestoneComponent } from './milestone/milestone.component';
+import { DataTableComponent } from './data-table/data-table.component';
+import { TestcaseComponent } from './testcase/testcase.component';
+import { SaveButtonComponent } from './save-button/save-button.component';
+import { ModalConfirmComponent } from './modal-confirm/modal-confirm.component';
+import { PreviousRouteService } from 'src/shared/service/previousroute/previousroute.service';
+import { TestCaseListComponent } from './test-case-list/test-case-list.component';
+import { TestRunComponent } from './test-run/test-run.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +40,16 @@ import { TeamlistComponent } from './teamlist/teamlist.component';
     AbstractFilterPipe,
     ApplicationComponent,
     AutomationListComponent,
-    ProgramListComponent
+    ProgramListComponent,
+    MilestoneComponent,
+    MilestoneListComponent,
+    BackButtonDirective,
+    DataTableComponent,
+    TestcaseComponent,
+    SaveButtonComponent,
+    ModalConfirmComponent,
+    TestCaseListComponent,
+    TestRunComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +62,7 @@ import { TeamlistComponent } from './teamlist/teamlist.component';
   providers: [
     ApplicationService,
     ProgramService,
+    PreviousRouteService,
     Title
   ],
   bootstrap: [AppComponent]

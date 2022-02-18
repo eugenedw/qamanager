@@ -68,9 +68,9 @@ export class RRFComponent implements OnInit {
         this.updateRRFProgram(this.currentRRF.app_id);
       }
     },(rej)=>{
-      alert(JSON.stringify(rej))
+      //alert(JSON.stringify(rej))
     }).catch(err=>{
-      alert(JSON.stringify(err))
+      //alert(JSON.stringify(err))
     });
     this.programService.getPrograms().then((resp)=>{
       this.programs = resp;
